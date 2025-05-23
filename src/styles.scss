@@ -232,6 +232,10 @@
             max-width: 1440px;
         }
     }
+    .container-fluid {
+        max-width: 100%;
+        padding: 0;
+    }
 // End Fonts
 body {
     background: #f5f5f5;
