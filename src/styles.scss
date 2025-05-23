@@ -7,8 +7,8 @@
     font-style: normal;
     font-weight: 300;
     src:
-        url('/fonts/open-sans/open-sans-v35-latin-300.woff2') format('woff2'),
-        url('/fonts/open-sans/open-sans-v35-latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-v35-latin-300.woff2') format('woff2'),
+        url('assets/fonts/open-sans/open-sans-v35-latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-regular - latin */
     @font-face {
@@ -17,8 +17,8 @@
     font-style: normal;
     font-weight: 400;
     src:
-        url('/fonts/open-sans/open-sans-v35-latin-regular.woff2') format('woff2'),
-        url('/fonts/open-sans/open-sans-v35-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-v35-latin-regular.woff2') format('woff2'),
+        url('assets/fonts/open-sans/open-sans-v35-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-italic - latin */
     @font-face {
@@ -27,8 +27,8 @@
     font-style: italic;
     font-weight: 400;
     src:
-        url('/fonts/open-sans/open-sans-v35-latin-italic.woff2') format('woff2'),
-        url('/fonts/open-sans/open-sans-v35-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-v35-latin-italic.woff2') format('woff2'),
+        url('assets/fonts/open-sans/open-sans-v35-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-500 - latin */
     @font-face {
@@ -37,8 +37,8 @@
     font-style: normal;
     font-weight: 500;
     src:
-        url('/fonts/open-sans/open-sans-v35-latin-500.woff2') format('woff2'),
-        url('/fonts/open-sans/open-sans-v35-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-v35-latin-500.woff2') format('woff2'),
+        url('assets/fonts/open-sans/open-sans-v35-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-600 - latin */
     @font-face {
@@ -47,8 +47,8 @@
     font-style: normal;
     font-weight: 600;
     src:
-        url('/fonts/open-sans/open-sans-v35-latin-600.woff2') format('woff2'),
-        url('/fonts/open-sans/open-sans-v35-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-v35-latin-600.woff2') format('woff2'),
+        url('assets/fonts/open-sans/open-sans-v35-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-600italic - latin */
     @font-face {
@@ -57,9 +57,9 @@
     font-style: italic;
     font-weight: 600;
     src:
-        url('/fonts/open-sans/open-sans-v35-latin-600italic.woff2')
+        url('assets/fonts/open-sans/open-sans-v35-latin-600italic.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-v35-latin-600italic.ttf')
+        url('assets/fonts/open-sans/open-sans-v35-latin-600italic.ttf')
         format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-700 - latin */
@@ -69,8 +69,8 @@
     font-style: normal;
     font-weight: 700;
     src:
-        url('/fonts/open-sans/open-sans-v35-latin-700.woff2') format('woff2'),
-        url('/fonts/open-sans/open-sans-v35-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-v35-latin-700.woff2') format('woff2'),
+        url('assets/fonts/open-sans/open-sans-v35-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-700italic - latin */
     @font-face {
@@ -79,9 +79,9 @@
     font-style: italic;
     font-weight: 700;
     src:
-        url('/fonts/open-sans/open-sans-v35-latin-700italic.woff2')
+        url('assets/fonts/open-sans/open-sans-v35-latin-700italic.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-v35-latin-700italic.ttf')
+        url('assets/fonts/open-sans/open-sans-v35-latin-700italic.ttf')
         format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-800 - latin */
@@ -91,8 +91,8 @@
     font-style: normal;
     font-weight: 800;
     src:
-        url('/fonts/open-sans/open-sans-v35-latin-800.woff2') format('woff2'),
-        url('/fonts/open-sans/open-sans-v35-latin-800.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-v35-latin-800.woff2') format('woff2'),
+        url('assets/fonts/open-sans/open-sans-v35-latin-800.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-800 - latin ext */
     @font-face {
@@ -101,9 +101,9 @@
     font-display: swap;
     font-weight: 300;
     src:
-        url('/fonts/open-sans/open-sans-latin-ext-300-normal.woff2')
+        url('assets/fonts/open-sans/open-sans-latin-ext-300-normal.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-latin-ext-300-normal.woff') format('woff');
+        url('assets/fonts/open-sans/open-sans-latin-ext-300-normal.woff') format('woff');
     }
     /* open-sans-latin-ext-400-normal */
     @font-face {
@@ -112,9 +112,9 @@
     font-display: swap;
     font-weight: 400;
     src:
-        url('/fonts/open-sans/open-sans-latin-ext-400-normal.woff2')
+        url('assets/fonts/open-sans/open-sans-latin-ext-400-normal.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-latin-ext-400-normal.woff') format('woff');
+        url('assets/fonts/open-sans/open-sans-latin-ext-400-normal.woff') format('woff');
     }
     /* open-sans-italic - latin ext */
     @font-face {
@@ -123,9 +123,9 @@
     font-style: italic;
     font-weight: 400;
     src:
-        url('/fonts/open-sans/open-sans-latin-ext-400-italic.woff2')
+        url('assets/fonts/open-sans/open-sans-latin-ext-400-italic.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-latin-ext-400-italic.woff') format('woff'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-latin-ext-400-italic.woff') format('woff'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-latin-ext-500-normal */
     @font-face {
@@ -134,9 +134,9 @@
     font-display: swap;
     font-weight: 500;
     src:
-        url('/fonts/open-sans/open-sans-latin-ext-500-normal.woff2')
+        url('assets/fonts/open-sans/open-sans-latin-ext-500-normal.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-latin-ext-500-normal.woff') format('woff');
+        url('assets/fonts/open-sans/open-sans-latin-ext-500-normal.woff') format('woff');
     }
     /* open-sans-latin-ext-600-normal */
     @font-face {
@@ -145,9 +145,9 @@
     font-display: swap;
     font-weight: 600;
     src:
-        url('/fonts/open-sans/open-sans-latin-ext-600-normal.woff2')
+        url('assets/fonts/open-sans/open-sans-latin-ext-600-normal.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-latin-ext-600-normal.woff') format('woff');
+        url('assets/fonts/open-sans/open-sans-latin-ext-600-normal.woff') format('woff');
     }
     /* open-sans-600italic - latin ext */
     @font-face {
@@ -156,9 +156,9 @@
     font-style: italic;
     font-weight: 600;
     src:
-        url('/fonts/open-sans/open-sans-latin-ext-600-italic.woff2')
+        url('assets/fonts/open-sans/open-sans-latin-ext-600-italic.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-latin-ext-600-italic.woff') format('woff'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-latin-ext-600-italic.woff') format('woff'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-latin-ext-700-normal */
     @font-face {
@@ -167,9 +167,9 @@
     font-display: swap;
     font-weight: 700;
     src:
-        url('/fonts/open-sans/open-sans-latin-ext-700-normal.woff2')
+        url('assets/fonts/open-sans/open-sans-latin-ext-700-normal.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-latin-ext-700-normal.woff') format('woff');
+        url('assets/fonts/open-sans/open-sans-latin-ext-700-normal.woff') format('woff');
     }
     /* open-sans-700italic - latin-ext */
     @font-face {
@@ -178,9 +178,9 @@
     font-style: italic;
     font-weight: 700;
     src:
-        url('/fonts/open-sans/open-sans-latin-ext-700-italic.woff2')
+        url('assets/fonts/open-sans/open-sans-latin-ext-700-italic.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-latin-ext-700-italic.woff') format('woff'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/open-sans/open-sans-latin-ext-700-italic.woff') format('woff'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* open-sans-latin-ext-800-normal */
     @font-face {
@@ -189,9 +189,9 @@
     font-display: swap;
     font-weight: 800;
     src:
-        url('/fonts/open-sans/open-sans-latin-ext-800-normal.woff2')
+        url('assets/fonts/open-sans/open-sans-latin-ext-800-normal.woff2')
         format('woff2'),
-        url('/fonts/open-sans/open-sans-latin-ext-800-normal.woff') format('woff');
+        url('assets/fonts/open-sans/open-sans-latin-ext-800-normal.woff') format('woff');
     }
     /* 'Sansa Pro';-regular - latin */
     @font-face {
@@ -200,8 +200,8 @@
     font-style: normal;
     font-weight: 300;
     src:
-        url('/fonts/sansa-pro/SansaPro-400.woff2') format('woff2'),
-        url('/fonts/sansa-pro/SansaPro-400.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/sansa-pro/SansaPro-400.woff2') format('woff2'),
+        url('assets/fonts/sansa-pro/SansaPro-400.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* 'Sansa Pro';semi bold - latin */
     @font-face {
@@ -210,8 +210,8 @@
     font-style: normal;
     font-weight: 600;
     src:
-        url('/fonts/sansa-pro/SansaPro-600.woff2') format('woff2'),
-        url('/fonts/sansa-pro/SansaPro-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/sansa-pro/SansaPro-600.woff2') format('woff2'),
+        url('assets/fonts/sansa-pro/SansaPro-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     /* 'Sansa Pro'; bold- latin */
     @font-face {
@@ -220,8 +220,8 @@
     font-style: normal;
     font-weight: 700;
     src:
-        url('/fonts/sansa-pro/SansaPro-700.woff2') format('woff2'),
-        url('/fonts/sansa-pro/SansaPro-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('assets/fonts/sansa-pro/SansaPro-700.woff2') format('woff2'),
+        url('assets/fonts/sansa-pro/SansaPro-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
     }
     @media (min-width: 1200px) {
         .container,
@@ -237,7 +237,177 @@
         padding: 0;
     }
 // End Fonts
+* {
+    margin: 0; 
+    padding: 0;
+}
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     background: #f5f5f5;
 }
 // 
+
+// Typography
+
+h1,
+.h1 {
+  font-size: 26px;
+}
+
+h2,
+.h2 {
+  font-size: 24px ;
+}
+
+h3,
+.h3 {
+  font-size: 22px ;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+
+}
+
+h5,
+.h5 {
+  font-size: 18px ;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  color: #2a295c;
+  margin-bottom: 0px;
+}
+h1,
+h2,
+h3 {
+   font-family: "Sansa Pro" ; 
+  font-weight: 500;
+}
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans'; 
+  margin-top: 0;
+  font-weight: 500;
+}
+p,
+.p {
+  font-size: 14px;
+  color: #2a295c;
+}
+p,
+.p {
+  font-size: 14px;
+  color: #2a295c;
+}
+// End Typography
+// Start Buttons
+
+// End Buttons
+// start dashboard Css
+.invoice-card {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    clip-path: polygon(1% 0, 23% 77%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    border-right: 40px solid transparent;
+    border-bottom-left-radius: 10px;
+  }
+
+  &.purple::before {
+    border-bottom: 40px solid #8e44ad; // purple
+  }
+
+  &.green::before {
+    border-bottom: 40px solid #34A866; // green
+  }
+
+  &.red::before {
+    border-bottom: 40px solid #DA2020; // red
+  }
+
+  &.yellow::before {
+    border-bottom: 40px solid #FCBD4C; // yellow
+  }
+
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .invoice-icon {
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 18px;
+    }
+  }
+
+  .invoice-amount {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  .invoice-text {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .invoice-footer {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    span {
+      color: #4caf50;
+    }
+
+    i {
+      margin-right: 6px;
+      font-size: 16px;
+    }
+
+    .down {
+      color: #f44336;
+    }
+  }
+}
+
+.card {
+  .card-header {
+    background: #fff;
+    border-bottom: 1px solid var(--Color-Stroke-Color, #E0E0E0);
+    padding: 8px 16px;
+
+    
+  }
+}
+
+// End dashboard Css
+
+
