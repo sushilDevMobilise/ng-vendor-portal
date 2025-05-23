@@ -1,1 +1,239 @@
 /* You can add global styles to this file, and also import other style files */
+// Start Fonts
+    /* open-sans-300 - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src:
+        url('/fonts/open-sans/open-sans-v35-latin-300.woff2') format('woff2'),
+        url('/fonts/open-sans/open-sans-v35-latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-regular - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url('/fonts/open-sans/open-sans-v35-latin-regular.woff2') format('woff2'),
+        url('/fonts/open-sans/open-sans-v35-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-italic - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src:
+        url('/fonts/open-sans/open-sans-v35-latin-italic.woff2') format('woff2'),
+        url('/fonts/open-sans/open-sans-v35-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-500 - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src:
+        url('/fonts/open-sans/open-sans-v35-latin-500.woff2') format('woff2'),
+        url('/fonts/open-sans/open-sans-v35-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-600 - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src:
+        url('/fonts/open-sans/open-sans-v35-latin-600.woff2') format('woff2'),
+        url('/fonts/open-sans/open-sans-v35-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-600italic - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    src:
+        url('/fonts/open-sans/open-sans-v35-latin-600italic.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-v35-latin-600italic.ttf')
+        format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-700 - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        url('/fonts/open-sans/open-sans-v35-latin-700.woff2') format('woff2'),
+        url('/fonts/open-sans/open-sans-v35-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-700italic - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src:
+        url('/fonts/open-sans/open-sans-v35-latin-700italic.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-v35-latin-700italic.ttf')
+        format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-800 - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src:
+        url('/fonts/open-sans/open-sans-v35-latin-800.woff2') format('woff2'),
+        url('/fonts/open-sans/open-sans-v35-latin-800.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-800 - latin ext */
+    @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src:
+        url('/fonts/open-sans/open-sans-latin-ext-300-normal.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-latin-ext-300-normal.woff') format('woff');
+    }
+    /* open-sans-latin-ext-400-normal */
+    @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src:
+        url('/fonts/open-sans/open-sans-latin-ext-400-normal.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-latin-ext-400-normal.woff') format('woff');
+    }
+    /* open-sans-italic - latin ext */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src:
+        url('/fonts/open-sans/open-sans-latin-ext-400-italic.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-latin-ext-400-italic.woff') format('woff'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-latin-ext-500-normal */
+    @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src:
+        url('/fonts/open-sans/open-sans-latin-ext-500-normal.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-latin-ext-500-normal.woff') format('woff');
+    }
+    /* open-sans-latin-ext-600-normal */
+    @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src:
+        url('/fonts/open-sans/open-sans-latin-ext-600-normal.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-latin-ext-600-normal.woff') format('woff');
+    }
+    /* open-sans-600italic - latin ext */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    src:
+        url('/fonts/open-sans/open-sans-latin-ext-600-italic.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-latin-ext-600-italic.woff') format('woff'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-latin-ext-700-normal */
+    @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src:
+        url('/fonts/open-sans/open-sans-latin-ext-700-normal.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-latin-ext-700-normal.woff') format('woff');
+    }
+    /* open-sans-700italic - latin-ext */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src:
+        url('/fonts/open-sans/open-sans-latin-ext-700-italic.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-latin-ext-700-italic.woff') format('woff'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* open-sans-latin-ext-800-normal */
+    @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 800;
+    src:
+        url('/fonts/open-sans/open-sans-latin-ext-800-normal.woff2')
+        format('woff2'),
+        url('/fonts/open-sans/open-sans-latin-ext-800-normal.woff') format('woff');
+    }
+    /* 'Sansa Pro';-regular - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Sansa Pro';
+    font-style: normal;
+    font-weight: 300;
+    src:
+        url('/fonts/sansa-pro/SansaPro-400.woff2') format('woff2'),
+        url('/fonts/sansa-pro/SansaPro-400.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* 'Sansa Pro';semi bold - latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Sansa Pro';
+    font-style: normal;
+    font-weight: 600;
+    src:
+        url('/fonts/sansa-pro/SansaPro-600.woff2') format('woff2'),
+        url('/fonts/sansa-pro/SansaPro-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    /* 'Sansa Pro'; bold- latin */
+    @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Sansa Pro';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        url('/fonts/sansa-pro/SansaPro-700.woff2') format('woff2'),
+        url('/fonts/sansa-pro/SansaPro-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+    @media (min-width: 1200px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1440px;
+        }
+    }
+// End Fonts
+body {
+    background: #f5f5f5;
+}
+// 
