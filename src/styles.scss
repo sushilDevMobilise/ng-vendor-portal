@@ -245,62 +245,131 @@ body {
 }
 // 
 
+//Variables
+/* Define CSS Variables */
+:root {
+    --primary: #2a295c;
+    --secondary: #283897;
+    --green: #34A866;
+    --sky-blue: #199CDA;
+    --light-blue: #E7E9F7;
+    --lighter-blue: #F9FAFF;
+    --orange: #EF661A;
+    --yellow: #FCBD4C;
+    --red: #DA2020;
+    --stroke-color: #E0E0E0;
+    --selection: #7E8ACC;
+    --bg-color: #efefee;
+    --white: #ffffff;
+  }
+  
+  /* Apply Colors */
+  .color-primary { color: var(--primary); }
+  .color-secondary { color: var(--secondary); }
+  .color-green { color: var(--green); }
+  .color-sky-blue { color: var(--sky-blue); }
+  .color-light-blue { color: var(--light-blue); }
+  .color-lighter-blue { color: var(--lighter-blue); }
+  .color-orange { color: var(--orange); }
+  .color-yellow { color: var(--yellow); }
+  .color-red { color: var(--red); }
+  .color-stroke { color: var(--stroke-color); }
+  .color-selection { color: var(--selection); }
+  .color-bgcolor { color: var(--bg-color); }
+  .color-white { color: var(--white); }
+  
+  /* Background Colors */
+  .bg_primary { background-color: var(--primary); }
+  .bg_secondary { background-color: var(--secondary); }
+  .bg-green { background-color: var(--green); }
+  .bg-sky-blue { background-color: var(--sky-blue); }
+  .bg-light-blue { background-color: var(--light-blue); }
+  .bg-lighter-blue { background-color: var(--lighter-blue); }
+  .bg-orange { background-color: var(--orange); }
+  .bg-yellow { background-color: var(--yellow); }
+  .bg-red { background-color: var(--red); }
+  .bg-stroke { background-color: var(--stroke-color); }
+  .bg-selection { background-color: var(--selection); }
+  .bg-bgcolor { background-color: var(--bg-color); }
+  .bg-white { background-color: var(--white); }
+  
+
 // Typography
 
 h1,
 .h1 {
-  font-size: 26px;
+  font-size: 1.625rem; //26px
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 h2,
 .h2 {
-  font-size: 24px ;
+  font-size: 1.5rem; //24px
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 h3,
 .h3 {
-  font-size: 22px ;
+  font-size: 1.375rem; //22px
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 h4,
 .h4 {
-  font-size: 20px;
-
+  font-size: 1.25rem; //20px
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 h5,
 .h5 {
-  font-size: 18px ;
+  font-size: 1.125rem;  //18px
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 h6,
 .h6 {
-  font-size: 16px;
-  color: #2a295c;
-  margin-bottom: 0px;
+  font-size: 1rem;  //16px
+  font-weight: 400;
+  line-height: 1.5;
 }
-h1,
-h2,
-h3 {
-   font-family: "Sansa Pro" ; 
-  font-weight: 500;
+
+// Paragraph styles
+p {
+  font-size: 0.875rem; //14px
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
 }
-h4,
-h5,
-h6 {
-  font-family: 'Open Sans'; 
-  margin-top: 0;
-  font-weight: 500;
+
+.small-text {
+  font-size: 0.75rem;       //12px
+  line-height: 1.5;
 }
-p,
-.p {
-  font-size: 14px;
-  color: #2a295c;
+
+.large-text {
+  font-size: 1rem;      //16px
+  line-height: 1.5;
 }
-p,
-.p {
-  font-size: 14px;
-  color: #2a295c;
+
+.opacity-text {
+  opacity: 0.8;
+}
+
+.form-label{
+  color: #2A295C;
+font-size: 13px;
+font-weight: 500; 
+}
+
+.btn:hover {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 // End Typography
 // Start Buttons
