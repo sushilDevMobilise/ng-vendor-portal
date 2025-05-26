@@ -1,18 +1,55 @@
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    background-color: #199CDA;
-    height: 6px;
-    width: 40px;
-    border-radius: 12px;
-    flex-shrink: 0;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #199cda;
+  height: 6px;
+  width: 40px;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 .nav-pills .nav-link {
-    border-radius: 12px;
-    height: 6px;
-    width: 40px;
-    background-color: #E7E9F7;
+  border-radius: 12px;
+  height: 6px;
+  width: 40px;
+  background-color: #e7e9f7;
 }
-.overflow{
-    overflow-y: auto;
-    max-height: 150px;
+.custom-upload-box {
+  height: 46px;
+  background-color: rgba(40, 56, 151, 0.1);
+  outline: 1px dashed rgba(42, 41, 92, 0.6);
+  outline-offset: -1px;
+}
+
+.upload-icon {
+  height: 18px;
+}
+.left-fix {
+  position: sticky;
+  bottom: 0;
+  height: 92vh;
+  top: 59px;
+}
+
+.scroll-box {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #7d89da;  
+  border-radius: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: #e0e0e0;  
+  border-radius: 6px;
+}
+
+.eye-icon {
+  position: relative;
+  top: 40px;
+  left: 78%;
 }

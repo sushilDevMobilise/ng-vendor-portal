@@ -1,0 +1,80 @@
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #199CDA;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+.nav-pills .nav-link {
+    border-radius: 12px;
+    height: 6px;
+    width: 32px;
+    background-color: #E7E9F7;
+}
+.overflow{
+    overflow-y: auto;
+    max-height: 150px;
+}
+.left-fix{
+        position: sticky;
+    bottom: 0;
+    height: 92vh;
+    top: 59px;
+}
+.custom-upload-box {
+  height: 46px;
+  background-color: rgba(40, 56, 151, 0.1);
+  outline: 1px dashed rgba(42, 41, 92, 0.6);
+  outline-offset: -1px;
+}
+
+.upload-icon {
+  height: 18px;
+}
+.scroll-box {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #7d89da;  
+  border-radius: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: #e0e0e0;  
+  border-radius: 6px;
+}
+ .custom-table td {
+    border-bottom: 1px solid #e5e7eb; 
+    color: var(--primary);
+    font-size: 14px;
+    height: 48px;
+  }
+
+  .custom-table th {
+    background-color: #f0f2fc;
+    border-bottom: 1px solid #e5e7eb;
+   color: var(--primary);
+   font-size: 14px;
+   font-weight: 600;
+   height: 48px;
+   vertical-align: middle;
+  }
+
+  .custom-table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  .overfllow{
+    overflow-y: auto;
+    max-height: 600px;
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+  }
+  .overfllow::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
