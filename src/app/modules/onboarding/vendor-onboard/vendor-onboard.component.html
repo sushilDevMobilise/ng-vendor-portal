@@ -4,7 +4,7 @@
     <div class="col-md-3 bg-lighter-blue border-end p-3">
       <div>
         <img src="assets/img/Arrow 1.svg" class="me-3" alt="arrow" />
-        <span>Go to Back</span>
+        <span class="color-primary">Go to Back</span>
         <div class="d-flex justify-content-between mt-2 py-3">
           <ul class="nav nav-pills  d-flex gap-3" role="tablist">
             <li class="nav-item flex-fill text-center" role="presentation">
@@ -20,16 +20,16 @@
         </div>
       </div>
         <div class="d-flex flex-column mt-2">
-            <h5>Course Details</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis tincidunt.</p>
+            <h5 class="color-primary">Course Details</h5>
+            <p class="color-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis tincidunt.</p>
         </div>
          <div class="d-flex flex-column gap-3 ">
-            <h5>Course Details</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis tincidunt.</p>
+            <h5 class="color-primary">Course Details</h5>
+            <p class="color-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis tincidunt.</p>
         </div>
          <div class="d-flex flex-column gap-3 mt-4">
-            <h5>Course Details</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis tincidunt.</p>
+            <h5 class="color-primary">Course Details</h5>
+            <p class="color-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula facilisis tincidunt.</p>
         </div>
         <div class="position-absolute bottom-0 px-3 py-5">
             <img src="assets/img/OBJECTS (1).svg" alt="">
@@ -42,7 +42,7 @@
         <!-- Tab 1 -->
         <div class="tab-pane mt-4" [class.active]="tabIndex === 0" id="basictab1">
          <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-12">
             <div>
             <h2 class="color-primary">Invite External Vendor</h2>
            <div class="d-flex">
@@ -51,45 +51,294 @@
            </div>
            <p class="color-primary mt-2 opacity-text">We will use GSTIN number to autofill the Vendor Invite form, you don’t need to fill the the entire form. </p>
            </div>
-           <div class="form-group">
-                  <label class="form-label">GSTIN Attachment</label>
-                  <input type="file" class="form-control">
-                  </div>
-                  <div class="d-flex align-items-center justify-content-center mt-3 gap-2 w-100" >
-                  <div class="flex-grow-1 border-bottom"></div>
-                  <span class="text-secondary small">Or</span>
-                  <div class="flex-grow-1 border-bottom"></div>
-                </div>
-                 <div class="form-group">
-                  <label class="form-label">GSTIN Number</label>
-                  <input type="input" class="form-control" placeholder="Enter your 15-digit GSTIN">
-                  </div>
+         <div class="row g-3">
+                      <!-- GSTIN Attachment & Number Section -->
+                      <div class="col-md-5">
+                        
+                        <!-- GSTIN Attachment -->
+                        <div class="form-group">
+                          <label for="gstinFile" class="form-label">GSTIN Attachment</label>
+                          <input type="file" class="form-control" id="gstinFile">
+                        </div>
+                    
+                        <!-- OR Divider -->
+                        <div class="d-flex align-items-center justify-content-center mt-3 gap-2 w-100">
+                          <div class="flex-grow-1 border-bottom"></div>
+                          <span class="text-secondary small">Or</span>
+                          <div class="flex-grow-1 border-bottom"></div>
+                        </div>
+                    
+                        <!-- GSTIN Number Input -->
+                        <div class="form-group mt-3">
+                          <label for="gstinNumber" class="form-label">GSTIN Number</label>
+                          <input type="text" class="form-control" id="gstinNumber" placeholder="Enter your 15-digit GSTIN">
+                        </div>
+                    
+                      </div>
+                    
+                      <!-- Tick Icon -->
+                      <div class="col-md-1 d-flex align-items-start justify-content-center pt-4">
+                        <img src="assets/img/circle-tick.svg" alt="tick" class="img-fluid">
+                      </div>
+                    
+                      <!-- Empty Column for Spacing or Future Content -->
+                      <div class="col-md-6">
+                        <div class="card mt-2">
+                        <div class="card-body">
+                           <div class="overflow">
+                            <p class="color-primary">
+सत्यमेव जयते
+Government of India
+Form GST REG-06
+[See Rule 10(1)]
+Registration Certificate
+Registration Number: 09AAATC2716R8Z6
+1.
+Legal Name
+2.
+Trade Name, if any
+3.
+4.
+Constitution of Business
+Address of Principal Place of Business
+COUNCIL OF SCIENTIFIC AND INDUSTRIAL RESEARCH
+CENTRAL DRUG RESEARCH INSTITUTE
+Society/Club/ Trust/ AOP
+1, CDRI, SITAPUR ROAD, JANKIPURAM, Lucknow, Uttar Pradesh, 226021
+5.
+Date of Liability
+28/03/2008
+6.
+Period of Validity
+From
+14/08/2017 To
+NA
+7.
+Type of Registration
+Regular
+8.
+Signature
+Particulars of Approving Authority Centre
+Signature Not Verified
+Digitally signed by DS GOODS
+AND SERVICES AX NETWORK 1 Date: 2018.03.01-22:12:16 IST
+Name
+Designation
+Jurisdictional Office
+9. Date of issue of Certificate
+Pankaj Kumar Srivastava
+Superintendent
+Lucknow Sector-18, AC
+01/03/2018
+Note: The registration certificate is required to be prominently displayed at all places of business in the State.
+This is a system generated digitally signed Registration Certificate issued based on the approval of application granted on 14/08/2017 by the jurisdictional authority.</p>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
 
                    <div class="d-flex mt-5">
              <h5 class="color-primary mt-2 mb-0">Share Business PAN NUMBER</h5>
             <span class="color-yellow bg_primary rounded px-2 mt-2 ms-3">AUTOFILL</span>
            </div>
            <p class="color-primary mt-2 opacity-text">We will use PAN number to autofill the Vendor Invite form, you don’t need to fill the the entire form. </p>
-           <div class="form-group">
-                  <label class="form-label">Pan Card Attachment</label>
-                  <input type="file" class="form-control">
-                  </div>
-                  <div class="d-flex align-items-center justify-content-center mt-3 gap-2 w-100" >
-                  <div class="flex-grow-1 border-bottom"></div>
-                  <span class="text-secondary small">Or</span>
-                  <div class="flex-grow-1 border-bottom"></div>
-                </div>
-                 <div class="form-group">
-                  <label class="form-label">Pan Card Number</label>
-                  <input type="input" class="form-control" placeholder="Ex- ABCDE1234F">
-                  </div>
+           <div class="row g-3">
+                      <!-- GSTIN Attachment & Number Section -->
+                      <div class="col-md-5">
+                        
+                        <!-- GSTIN Attachment -->
+                        <div class="form-group">
+                          <label for="gstinFile" class="form-label">Pan Card Attachment</label>
+                          <input type="file" class="form-control" id="gstinFile">
+                        </div>
+                    
+                        <!-- OR Divider -->
+                        <div class="d-flex align-items-center justify-content-center mt-3 gap-2 w-100">
+                          <div class="flex-grow-1 border-bottom"></div>
+                          <span class="text-secondary small">Or</span>
+                          <div class="flex-grow-1 border-bottom"></div>
+                        </div>
+                    
+                        <!-- GSTIN Number Input -->
+                        <div class="form-group mt-3">
+                          <label for="gstinNumber" class="form-label">Pan Card Number</label>
+                          <input type="text" class="form-control" id="gstinNumber" placeholder="Enter your 15-digit GSTIN">
+                        </div>
+                    
+                      </div>
+                    
+                      <!-- Tick Icon -->
+                      <div class="col-md-1 d-flex align-items-start justify-content-center pt-4">
+                        <img src="assets/img/circle-tick.svg" alt="tick" class="img-fluid">
+                      </div>
+                    
+                      <!-- Empty Column for Spacing or Future Content -->
+                      <div class="col-md-6">
+                        <div class="card mt-2">
+                        <div class="card-body">
+                           <div class="overflow">
+                            <p class="color-primary">
+                             आयकर विभाग
+                             INCOME TAX DEPARTMENT<br>
+                             सत्यमेव जयते<br>
+                             A SMART INDIA COMPANY
+                             01/09/2008<br>
+                             Permanent Account Number
+                             AAPFA3421J<br>
+                             भारत सरकार<br>
+                             GOVT. OF INDIA<br>
+                             भारत सर<br>
+                             24092008</p>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              <div class="d-flex justify-content-start mt-4">
+                <button class="btn bg_secondary color-white"  (click)="nextTab()">Continue <img src="assets/img/arrow right.svg" class="ms-2" alt="arrow"> </button>
+              </div> 
            </div>
             </div>
          </div>
 
         <!-- Tab 2 -->
-        <div class="tab-pane" [class.active]="tabIndex === 1" id="basictab2">
-          <!-- Your Media Upload code here -->
+        <div class="tab-pane mt-4" [class.active]="tabIndex === 1" id="basictab2">
+          <div class="row">
+            <div class="col-lg-12">
+                <h2 class="color-primary">Invite External Vendor</h2>
+            </div>
+            <div>
+                <div class="card">
+                 <div class="card-body p-0">
+                  <div class="header p-2 border-bottom">
+                    <h4 class="color-primary mb-0">Send Invite to Vendor</h4>
+                  </div>
+                  <div class="cand-content p-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group mb-3">
+                          <label class="form-label">Purchaser</label>
+                          <input type="text" class="form-control" placeholder="Mobilise app lab" disabled>
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                             <div class="form-group mb-3">
+                          <label class="form-label">Organization Name</label>
+                          <input type="text" class="form-control" placeholder="Mobilise app lab" disabled>
+                        </div>
+                        </div>
+                         <div class="col-md-6">
+                             <div class="form-group mb-3">
+                          <label class="form-label">Contact Name</label>
+                          <input type="text" class="form-control" placeholder="Ashish Sharma" disabled>
+                        </div>
+                        </div>
+                         <div class="col-md-6">
+                             <div class="form-group mb-3">
+                          <label class="form-label">Email ID</label>
+                          <input type="text" class="form-control" placeholder="ashish.sharma@mobilise.co.in" disabled>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                             <div class="form-group mb-3">
+                          <label class="form-label">Contact Number</label>
+                          <input type="text" class="form-control" placeholder="9999991245" disabled>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                         <div class="form-group mb-3">
+                           <label for="emailDropdown" class="form-label">Vender Type</label>
+                           <select id="emailDropdown" class="form-select" placceholder="Select">
+                             <option selected>Food</option>
+                             <option selected>Non Food</option>
+                           </select>
+                         </div>
+                       </div>
+                        <div class="col-md-6">
+                         <div class="form-group mb-3">
+                           <label for="emailDropdown" class="form-label">Department</label>
+                           <select id="emailDropdown" class="form-select" placceholder="Select">
+                             <option selected>IT</option>
+                             <option selected>HR</option>
+                              <option selected>Legal</option>
+                             <option selected>Finance</option>
+                              <option selected>Marketing</option>
+                             <option selected>Supply Chain</option>
+                              <option selected>HSE</option>
+                             <option selected>FMP</option>
+                              <option selected>Admin</option>
+                           </select>
+                         </div>
+                       </div>
+                       <div class="col-md-6">
+                             <div class="form-group mb-3">
+                          <label class="form-label">GST Number</label>
+                          <input type="text" class="form-control" placeholder="22AAAAA0000A1Z5" disabled>
+                        </div>
+                        </div>
+                         <div class="col-md-6">
+                             <div class="form-group mb-3">
+                          <label class="form-label">Pan Number</label>
+                          <input type="text" class="form-control" placeholder="kscam1221s" disabled>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                         <div class="form-group mb-3">
+                           <label for="emailDropdown" class="form-label">Risk Classification</label>
+                           <select id="emailDropdown" class="form-select" placceholder="Select">
+                             <option selected>Low</option>
+                             <option selected>Medium</option>
+                              <option selected>High</option>
+                           </select>
+                         </div>
+                       </div>
+                       <div class="col-md-6">
+                         <div class="form-group mb-3">
+                           <label for="emailDropdown" class="form-label">Vendor Audit / Evaluation Required</label>
+                           <select id="emailDropdown" class="form-select" placceholder="Select">
+                             <option selected>Vendor Evaluation - People Services-HSE</option>
+                             <option selected>Vendor Evaluation - AMC Services-HSE</option>
+                              <option selected>Vendor Evaluation - One Time Vendor-HSE</option>
+                             <option selected>Vendor Assessment- Outsourced labor services-HSE</option>
+                              <option selected>Vendor Bakery Audit</option>
+                             <option selected>Vendor Dairy Audit</option>
+                           </select>
+                         </div>
+                       </div>
+                        <div class="col-md-6">
+                         <div class="form-group mb-3">
+                           <label for="emailDropdown" class="form-label">Buyer</label>
+                           <select id="emailDropdown" class="form-select" placceholder="Select">
+                             <option selected>Default</option>
+                             <option selected>Default</option>
+                           </select>
+                         </div>
+                       </div>
+                       <div class="d-inline-flex align-items-start gap-3 w-100">
+                           <input type="checkbox" class="mt-1">
+                           <p class="color-primary mb-0">Supplier Code of Conduct:</p>
+                        </div>
+                        <div class="d-inline-flex align-items-start gap-3 w-100">
+                           <input type="checkbox" class="mt-1">
+                           <p class="color-primary mb-0">Animal Welfare Supplier Charter Supplier Acknowledgement Form:</p>
+                        </div>
+                        <div class="d-inline-flex align-items-start gap-3 w-100">
+                           <input type="checkbox" class="mt-1">
+                           <p class="color-primary mb-0">Sustainable Seafood Charter Supplier Acknowledgement:</p>
+                        </div>
+                    </div>
+                  </div>
+                   <div class="footer p-2 border-top bg-lighter-blue">
+                    <div class="d-flex justify-content-end">
+                       <button class="btn bg_secondary color-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                    </div>         
+                  </div>
+                 </div>
+               </div>
+            </div>
+          </div>
         </div>
 
         <!-- Tab 3 -->
@@ -102,14 +351,27 @@
           <!-- Additional Info and Submit -->
         </div>
       </div>
-
-      <!-- Bottom Navigation -->
-      <div class="mt-2 pt-3 d-flex justify-content-between">
-        <!-- <button class="btn btn-secondary" (click)="prevTab()" [disabled]="tabIndex === 0">Previous</button> -->
-        <div>
-          <button class="btn bg_secondary color-white"  (click)="nextTab()">Continue <img src="assets/img/arrow right.svg" class="ms-2" alt="arrow"> </button>
-          <button class="btn btn-primary" *ngIf="tabIndex === 3" (click)="submitForm()">Submit</button>
+    </div>
+  </div>
+</div>
+<!-- Modal for Confirmation -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-lighter-blue">
+        <h2 class="modal-title fs-5" id="exampleModalLabel">Success!</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <img src="assets/img/greencheck.svg" class="h-15 w-15" alt="check">
+            <h5 class="color-primary mt-2">Invitation Sent Successfully</h5>
+            <p class="color-primary">The vendor has been successfully invited. An email notification with the onboarding link has been sent to the vendor. You will be notified once they complete their registration. In the meantime, you can invite additional vendors as needed.</p>
         </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" data-bs-dismiss="modal">No, take me back to Dashboard</button>
+        <button type="button" class="btn btn-primary">Yes, Send another Invite</button>
       </div>
     </div>
   </div>

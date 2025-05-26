@@ -347,7 +347,6 @@ p {
   font-size: 0.875rem; //14px
   font-weight: 400;
   line-height: 1.6;
-  color: #333;
 }
 
 .small-text {
@@ -368,6 +367,27 @@ p {
   color: #2A295C;
 font-size: 13px;
 font-weight: 500; 
+}
+
+.btn-primary {
+    color: var(--white);
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem; //14px
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.btn-outline {
+    color: var(--secondary);
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem; //14px
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
