@@ -234,7 +234,7 @@
     }
     .container-fluid {
         max-width: 100%;
-        padding: 0;
+        // padding: 0;
     }
 // End Fonts
 * {
@@ -341,7 +341,19 @@ h6,
   font-weight: 400;
   line-height: 1.5;
 }
-
+h1,
+h2,
+h3 {
+   font-family: "Sansa Pro" ; 
+  font-weight: 600;
+}
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans'; 
+  margin-top: 0;
+  font-weight: 500;
+}
 // Paragraph styles
 p {
   font-size: 0.875rem; //14px
