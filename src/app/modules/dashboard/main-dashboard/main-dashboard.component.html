@@ -1,4 +1,4 @@
-<div class="container mt-3">
+<div class="container my-3">
         <div class="row">
             <div class="col-lg-6 col-12 mb-2">
                 <h1 class="color-primary">Vendor Dashboard</h1>
@@ -90,11 +90,13 @@
                         <div class="card-body">
                            <div class="invoice-card2">
                             <div class="invoice-top">
-                                <div class="left">
-                                <p class="invoice-id">#INV215654</p>
-                                </div>
-                                <div class="right">
-                                <span class="due-label">Due in 8 Days</span>
+                                <div class="d-flex justify-content-between align-items-center mb-5">
+                                    <div class="left">
+                                        <p class="invoice-id mb-0">#INV215654</p>
+                                    </div>
+                                    <div class="right">
+                                        <span class="due-label">Due in 8 Days</span>
+                                    </div>
                                 </div>
 
                                 <div class="invoice-details">
@@ -149,9 +151,9 @@
                             <h2 class="color-primary">Payment Statistics</h2>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <div class="w-60 m-auto">
-                            <canvas id="doughnutChart"></canvas>
+                    <div class="card-body ">
+                        <div class="">
+                            <canvas class="" id="doughnutChart"></canvas>
                         </div>
                         <div class="summary-card mt-2">
                             <div class="stats">
@@ -192,56 +194,201 @@
                             <h2 class="color-primary">Recent Activities</h2>
                         </div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body timeline-card">
                         <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                <div class="description">
-                                    <strong>300</strong> Partial Amount Paid On <strong>Paypal</strong>
+                            <div class="timeline-item" *ngFor="let item of timelineItems">
+                                <div class="timeline-icon">
+                                    <div class="internal-icon"></div>
                                 </div>
-                                <div class="date">
-                                    <img src="assets/img/calendar.svg" alt="date"> 18 Jan 2025
+                                <div class="timeline-content">
+                                <p class="timeline-title" [innerHTML]="item.title"></p>
+                                <div class="timeline-date">
+                                    <img src="assets/img/calendar.svg" alt="">
+                                    <span>{{ item.date }}</span>
                                 </div>
                                 </div>
                             </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                <div class="description">
-                                    New Expenses added <strong class="highlight">#TR018756</strong>
-                                </div>
-                                <div class="date">
-                                    <img src="assets/img/calendar.svg" alt="date"> 18 Jan 2025
-                                </div>
-                                </div>
                             </div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                <div class="description">
-                                    Estimate Created <strong class="highlight">#ES458789</strong>
-                                </div>
-                                <div class="date">
-                                    <img src="assets/img/calendar.svg" alt="date"> 18 Jan 2025
-                                </div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-lg-8 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="color-primary mb-0">Recent Invoices</h2>
+                            <a href="javascript:void;" class="btn-link">View All Invoice</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Amount</th>
+                                    <th>Paid</th>
+                                    <th>Status</th>
+                                    <th>Payment Mode</th>
+                                    <th>Due Date</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>INV0025</td>
+                                    <td>10,000</td>
+                                    <td>5,000</td>
+                                    <td><span class="status-badge paid">Paid</span></td>
+                                    <td>Cash</td>
+                                    <td>04 Mar 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>INV0025</td>
+                                    <td>25,750</td>
+                                    <td>10,750</td>
+                                    <td><span class="status-badge unpaid">Unpaid</span></td>
+                                    <td>Check</td>
+                                    <td>04 Mar 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>INV0025</td>
+                                    <td>1,20,500</td>
+                                    <td>60,000</td>
+                                    <td><span class="status-badge cancelled">Cancelled</span></td>
+                                    <td>Check</td>
+                                    <td>04 Mar 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>INV0025</td>
+                                    <td>9,99,999</td>
+                                    <td>60,000</td>
+                                    <td><span class="status-badge partial">Partially Paid</span></td>
+                                    <td>Check</td>
+                                    <td>04 Mar 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>INV0025</td>
+                                    <td>87,650</td>
+                                    <td>4,00,000</td>
+                                    <td><span class="status-badge partial">Partially Paid</span></td>
+                                    <td>Check</td>
+                                    <td>04 Mar 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>INV0025</td>
+                                    <td>69,420</td>
+                                    <td>30,000</td>
+                                    <td><span class="status-badge cancelled">Cancelled</span></td>
+                                    <td>Cash</td>
+                                    <td>04 Mar 2025</td>
+                                </tr>
+                                </tbody>
+                            </table>
 
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                <div class="description">
-                                    147 Created <strong class="highlight">#ES458789</strong>
-                                </div>
-                                <div class="date">
-                                    <img src="assets/img/calendar.svg" alt="date"> 18 Jan 2025
-                                </div>
+                            <div class="pagination">
+                                <div class="entries-info">Showing 1 to 10 of 50 entries</div>
+                                <div class="page-controls">
+                                <span class="page-btn">&lt;</span>
+                                <span class="page-btn">1</span>
+                                <span class="page-btn active">2</span>
+                                <span class="page-btn">3</span>
+                                <span class="page-btn">4</span>
+                                <span class="page-btn">&gt;</span>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="color-primary mb-0">Recent Invoices</h2>
+                            <a href="javascript:void;" class="btn-link">View All Invoice</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="transaction-section">
+                            <div class="transaction-group">
+                                <div class="section-title">Today</div>
+
+                                <div class="transaction-item">
+                                <div class="left">
+                                    <div class="icon">
+                                    <img src="assets/img/paypal-icon.svg" alt="PayPal" />
+                                    </div>
+                                    <div class="details">
+                                    <div class="name">Andrew James</div>
+                                    <div class="id">#INV45478</div>
+                                    </div>
+                                </div>
+                                <div class="amount income">+ 989.15</div>
+                                </div>
+
+                                <div class="transaction-item">
+                                <div class="left">
+                                    <div class="icon">
+                                    <img src="assets/img/card-icon.svg" alt="Card" />
+                                    </div>
+                                    <div class="details">
+                                    <div class="name">Andrew James</div>
+                                    <div class="id">#INV45478</div>
+                                    </div>
+                                </div>
+                                <div class="amount expense">-300.12</div>
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <div class="transaction-group">
+                                <div class="section-title">Yesterday</div>
+
+                                <div class="transaction-item">
+                                <div class="left">
+                                    <div class="icon">
+                                    <img src="assets/img/paypal-icon.svg" alt="PayPal" />
+                                    </div>
+                                    <div class="details">
+                                    <div class="name">Andrew James</div>
+                                    <div class="id">#INV45478</div>
+                                    </div>
+                                </div>
+                                <div class="amount income">+ 699</div>
+                                </div>
+
+                                <div class="transaction-item">
+                                <div class="left">
+                                    <div class="icon">
+                                    <img src="assets/img/card-icon.svg" alt="Card" />
+                                    </div>
+                                    <div class="details">
+                                    <div class="name">Andrew James</div>
+                                    <div class="id">#INV45478</div>
+                                    </div>
+                                </div>
+                                <div class="amount income">+ 474.22</div>
+                                </div>
+
+                                <div class="transaction-item">
+                                <div class="left">
+                                    <div class="icon">
+                                    <img src="assets/img/card-icon.svg" alt="Card" />
+                                    </div>
+                                    <div class="details">
+                                    <div class="name">Andrew James</div>
+                                    <div class="id">#INV45478</div>
+                                    </div>
+                                </div>
+                                <div class="amount expense">-474.22</div>
+                                </div>
+                            </div>
+                            </div>
 
                     </div>
                 </div>
