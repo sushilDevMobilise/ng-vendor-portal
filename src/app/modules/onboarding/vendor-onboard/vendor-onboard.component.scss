@@ -12,6 +12,21 @@
   width: 40px;
   background-color: #e7e9f7;
 }
+  .custom-step-pills .nav-link {
+    height: 6px;
+    border-radius: 12px;
+    background-color: #e5e7f0; /* Light grey */
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-step-pills .nav-link.active {
+    background-color: #189ad9; /* Blue for active step */
+  }
+
+  .custom-step-pills .nav-item {
+    padding: 0;
+  }
 .custom-upload-box {
   height: 46px;
   background-color: rgba(40, 56, 151, 0.1);

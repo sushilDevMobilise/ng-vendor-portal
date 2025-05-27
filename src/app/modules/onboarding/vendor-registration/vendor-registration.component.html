@@ -6,7 +6,7 @@
         <img src="assets/img/Arrow 1.svg" class="me-3" alt="arrow" />
         <span class="color-primary">Go to Back</span>
         <div class="d-flex justify-content-between mt-2 py-3">
-          <ul class="nav nav-pills d-flex gap-2" role="tablist">
+          <ul class="nav nav-pills d-flex justify-content-between custom-step-pills" role="tablist">
             <li class="nav-item flex-fill text-center" role="presentation">
               <a href="#basictab1" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 0" role="tab"></a>
             </li>
@@ -36,6 +36,42 @@
             </li>
           </ul>
         </div>
+        <div class="container">
+  <div class="step-container position-relative">
+    
+    <!-- Vertical Line -->
+    <div class="vertical-line"></div>
+
+    <!-- Step Items -->
+    <div class="step-item mb-4" [class.active]="tabIndex === 0">
+      <span class="step-number">1</span>
+      <h5 class="color-primary">Auto-Fill Vendor Details</h5>
+    </div>
+
+    <div class="step-item active mb-4">
+      <span class="step-number">2</span>
+      <div>
+        <h5 class="color-primary">Company Detail</h5>
+        <small class="text-muted">
+          We've auto-filled some fields using the document you uploaded.
+          Please review and complete any missing info., reliable, and under your control.
+        </small>
+      </div>
+    </div>
+
+    <h5 class="step-item mb-4 color-primary"><span class="step-number">3</span> Address Detail</h5>
+    <h5 class="step-item mb-4 color-primary"><span class="step-number">4</span> Contact Detail</h5>
+    <h5 class="step-item mb-4 color-primary"><span class="step-number">5</span> Finance Detail</h5>
+    <h5 class="step-item mb-4 color-primary"><span class="step-number">6</span> Code of Conduct and Charters</h5>
+    <h5 class="step-item mb-4 color-primary"><span class="step-number">7</span> Questionnaire</h5>
+    <h5 class="step-item mb-4 color-primary"><span class="step-number">8</span> Capabilities</h5>
+    <h5 class="step-item color-primary"><span class="step-number">9</span> Business Document</h5>
+
+  </div>
+</div>
+
+
+
       </div>
     </div>
 

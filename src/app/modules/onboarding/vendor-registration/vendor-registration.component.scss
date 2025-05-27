@@ -4,12 +4,30 @@
     border-radius: 12px;
     flex-shrink: 0;
 }
+.nav-pills {
+    gap: 7px;
+}
 .nav-pills .nav-link {
     border-radius: 12px;
     height: 6px;
     width: 32px;
     background-color: #E7E9F7;
 }
+  .custom-step-pills .nav-link {
+    height: 6px;
+    border-radius: 10px;
+    background-color: #e5e7f0; /* Light grey */
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-step-pills .nav-link.active {
+    background-color: #189ad9; /* Blue for active step */
+  }
+
+  .custom-step-pills .nav-item {
+    padding: 0;
+  }
 .overflow{
     overflow-y: auto;
     max-height: 150px;
@@ -78,3 +96,49 @@
   .overfllow::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Edge */
 }
+
+
+  .vertical-line {
+    position: absolute;
+    top: 4px;
+    left: 13px; /* aligns with center of .step-number */
+    width: 1px;
+    height: 100%;
+    background-color: #e0e0e0;
+    z-index: 0;
+  }
+
+  .step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    color: #1e1e2f;
+  }
+
+  .step-number {
+    background-color: #fff;
+    border: 2px solid var(--secondary);
+    color: var(--primary);
+    font-weight: 600;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+
+  .step-item.active {
+    font-weight: 500;
+    color: var(--primary);
+  }
+
+  .step-item small {
+    font-size: 13px;
+    color: #6c757d;
+  }
