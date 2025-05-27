@@ -6,72 +6,139 @@
         <img src="assets/img/Arrow 1.svg" class="me-3" alt="arrow" />
         <span class="color-primary">Go to Back</span>
         <div class="d-flex justify-content-between mt-2 py-3">
-          <ul class="nav nav-pills d-flex justify-content-between custom-step-pills" role="tablist">
+          <ul
+            class="nav nav-pills d-flex justify-content-between custom-step-pills"
+            role="tablist"
+          >
             <li class="nav-item flex-fill text-center" role="presentation">
-              <a href="#basictab1" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 0" role="tab"></a>
+              <a
+                href="#basictab1"
+                data-bs-toggle="tab"
+                class="nav-link"
+                [class.active]="tabIndex === 0"
+                role="tab"
+              ></a>
             </li>
             <li class="nav-item flex-fill text-center" role="presentation">
-              <a href="#basictab2" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 1" role="tab"></a>
+              <a
+                href="#basictab2"
+                data-bs-toggle="tab"
+                class="nav-link"
+                [class.active]="tabIndex === 1"
+                role="tab"
+              ></a>
             </li>
             <li class="nav-item flex-fill text-center" role="presentation">
-              <a href="#basictab3" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 2" role="tab"></a>
+              <a
+                href="#basictab3"
+                data-bs-toggle="tab"
+                class="nav-link"
+                [class.active]="tabIndex === 2"
+                role="tab"
+              ></a>
             </li>
             <li class="nav-item flex-fill text-center" role="presentation">
-              <a href="#basictab4" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 3" role="tab"></a>
+              <a
+                href="#basictab4"
+                data-bs-toggle="tab"
+                class="nav-link"
+                [class.active]="tabIndex === 3"
+                role="tab"
+              ></a>
             </li>
             <li class="nav-item flex-fill text-center" role="presentation">
-              <a href="#basictab5" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 4" role="tab"></a>
+              <a
+                href="#basictab5"
+                data-bs-toggle="tab"
+                class="nav-link"
+                [class.active]="tabIndex === 4"
+                role="tab"
+              ></a>
             </li>
             <li class="nav-item flex-fill text-center" role="presentation">
-              <a href="#basictab6" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 5" role="tab"></a>
+              <a
+                href="#basictab6"
+                data-bs-toggle="tab"
+                class="nav-link"
+                [class.active]="tabIndex === 5"
+                role="tab"
+              ></a>
             </li>
             <li class="nav-item flex-fill text-center" role="presentation">
-              <a href="#basictab7" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 6" role="tab"></a>
+              <a
+                href="#basictab7"
+                data-bs-toggle="tab"
+                class="nav-link"
+                [class.active]="tabIndex === 6"
+                role="tab"
+              ></a>
             </li>
             <li class="nav-item flex-fill text-center" role="presentation">
-              <a href="#basictab8" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 7" role="tab"></a>
+              <a
+                href="#basictab8"
+                data-bs-toggle="tab"
+                class="nav-link"
+                [class.active]="tabIndex === 7"
+                role="tab"
+              ></a>
             </li>
             <li class="nav-item flex-fill text-center" role="presentation">
-              <a href="#basictab9" data-bs-toggle="tab" class="nav-link" [class.active]="tabIndex === 8" role="tab"></a>
+              <a
+                href="#basictab9"
+                data-bs-toggle="tab"
+                class="nav-link"
+                [class.active]="tabIndex === 8"
+                role="tab"
+              ></a>
             </li>
           </ul>
         </div>
-        <div class="container">
-  <div class="step-container position-relative">
-    
-    <!-- Vertical Line -->
-    <div class="vertical-line"></div>
+        <div class="container p-0 mt-2">
+          <div class="step-container position-relative">
+            <!-- Vertical Line -->
+            <div class="vertical-line"></div>
 
-    <!-- Step Items -->
-    <div class="step-item mb-4" [class.active]="tabIndex === 0">
-      <span class="step-number">1</span>
-      <h5 class="color-primary">Auto-Fill Vendor Details</h5>
-    </div>
+            <!-- Step Items -->
+            <div class="step-item mb-4" [class.active]="tabIndex === 0">
+              <span class="step-number">1</span>
+              <h5 class="color-primary">Auto-Fill Vendor Details</h5>
+            </div>
 
-    <div class="step-item active mb-4">
-      <span class="step-number">2</span>
-      <div>
-        <h5 class="color-primary">Company Detail</h5>
-        <small class="text-muted">
-          We've auto-filled some fields using the document you uploaded.
-          Please review and complete any missing info., reliable, and under your control.
-        </small>
-      </div>
-    </div>
+            <div class="step-item active mb-4">
+              <span class="step-number">2</span>
+              <div>
+                <h5 class="color-primary">Company Detail</h5>
+                <small class="text-muted">
+                  We've auto-filled some fields using the document you uploaded.
+                  Please review and complete any missing info., reliable, and
+                  under your control.
+                </small>
+              </div>
+            </div>
 
-    <h5 class="step-item mb-4 color-primary"><span class="step-number">3</span> Address Detail</h5>
-    <h5 class="step-item mb-4 color-primary"><span class="step-number">4</span> Contact Detail</h5>
-    <h5 class="step-item mb-4 color-primary"><span class="step-number">5</span> Finance Detail</h5>
-    <h5 class="step-item mb-4 color-primary"><span class="step-number">6</span> Code of Conduct and Charters</h5>
-    <h5 class="step-item mb-4 color-primary"><span class="step-number">7</span> Questionnaire</h5>
-    <h5 class="step-item mb-4 color-primary"><span class="step-number">8</span> Capabilities</h5>
-    <h5 class="step-item color-primary"><span class="step-number">9</span> Business Document</h5>
-
-  </div>
-</div>
-
-
-
+            <h5 class="step-item mb-4 color-primary">
+              <span class="step-number">3</span> Address Detail
+            </h5>
+            <h5 class="step-item mb-4 color-primary">
+              <span class="step-number">4</span> Contact Detail
+            </h5>
+            <h5 class="step-item mb-4 color-primary">
+              <span class="step-number">5</span> Finance Detail
+            </h5>
+            <h5 class="step-item mb-4 color-primary">
+              <span class="step-number">6</span> Code of Conduct and Charters
+            </h5>
+            <h5 class="step-item mb-4 color-primary">
+              <span class="step-number">7</span> Questionnaire
+            </h5>
+            <h5 class="step-item mb-4 color-primary">
+              <span class="step-number">8</span> Capabilities
+            </h5>
+            <h5 class="step-item color-primary">
+              <span class="step-number">9</span> Business Document
+            </h5>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -89,8 +156,9 @@
               <div>
                 <h2 class="color-primary">Vendor Registration Invitation</h2>
                 <div class="d-flex">
-                  <h5 class="color-primary mt-2 mb-0">Business GSTIN</h5>
-                  <span class="color-yellow small-text pt-1 bg_primary rounded px-2 mt-2 ms-3"
+                  <h5 class="color-primary mt-2 fw-semibold mb-0">Business GSTIN</h5>
+                  <span
+                    class="color-yellow small-text pt-1 fw-bold bg_primary rounded px-2 mt-2 ms-3"
                     >AUTOFILL</span
                   >
                 </div>
@@ -107,7 +175,7 @@
                     <label for="gstinFile" class="form-label"
                       >GSTIN Attachment</label
                     >
-                     <div
+                    <div
                       class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
                     >
                       <!-- File name label -->
@@ -203,8 +271,9 @@
               </div>
 
               <div class="d-flex mt-5">
-                <h5 class="color-primary mt-2 mb-0">Business PAN NUMBER</h5>
-                <span class="color-yellow small-text pt-1 bg_primary rounded px-2 mt-2 ms-3"
+                <h5 class="color-primary mt-2 fw-semibold mb-0">Business PAN NUMBER</h5>
+                <span
+                  class="color-yellow small-text pt-1 bg_primary fw-bold rounded px-2 mt-2 ms-3"
                   >AUTOFILL</span
                 >
               </div>
@@ -302,22 +371,22 @@
               </div>
 
               <!--CIN-->
-              <div class="container mt-5">
+              <div class="container p-0 mt-5">
                 <div class="row g-3 align-items-start">
                   <!-- CIN Info and Upload Section -->
                   <div class="col-md-5">
                     <div class="row">
                       <!-- CIN Text and AutoFill -->
                       <div class="col-md-12">
-                       <div class="d-flex">
-                         <h5 class="color-primary mt-2 mb-0">
-                          Corporate Identification Number
-                        </h5>
-                        <span
-                          class="color-yellow small-text pt-1 bg_primary rounded px-2 mt-2 d-inline-block ms-3"
-                          >AUTOFILL</span
-                        >
-                       </div>
+                        <div class="d-flex">
+                          <h5 class="color-primary fw-semibold mt-2 mb-0">
+                            Corporate Identification Number
+                          </h5>
+                          <span
+                            class="color-yellow fw-bold small-text pt-1 bg_primary rounded px-2 mt-2 d-inline-block ms-3"
+                            >AUTOFILL</span
+                          >
+                        </div>
                         <p class="color-primary mt-2 opacity-text">
                           We will use your Corporate Identification Number (CIN)
                           to verify your registration & automatically populate
@@ -332,29 +401,29 @@
                             >To attach document</label
                           >
                           <div
-                      class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                    >
-                      <!-- File name label -->
-                      <div class="text-muted mb-0" id="fileLabel">
-                        No file chosen
-                      </div>
+                            class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                          >
+                            <!-- File name label -->
+                            <div class="text-muted mb-0" id="fileLabel">
+                              No file chosen
+                            </div>
 
-                      <!-- Upload icon -->
-                      <div>
-                        <img
-                          src="assets/img/upload.svg"
-                          alt="Upload Icon"
-                          class="upload-icon"
-                        />
-                      </div>
+                            <!-- Upload icon -->
+                            <div>
+                              <img
+                                src="assets/img/upload.svg"
+                                alt="Upload Icon"
+                                class="upload-icon"
+                              />
+                            </div>
 
-                      <!-- Transparent file input -->
-                      <input
-                        type="file"
-                        class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                        id="customFile"
-                      />
-                    </div>
+                            <!-- Transparent file input -->
+                            <input
+                              type="file"
+                              class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                              id="customFile"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -394,22 +463,22 @@
               </div>
 
               <!--MCA-->
-              <div class="container mt-5">
+              <div class="container p-0 mt-5">
                 <div class="row g-3 align-items-start">
                   <!-- CIN Info and Upload Section -->
                   <div class="col-md-5">
                     <div class="row">
                       <!-- CIN Text and AutoFill -->
                       <div class="col-md-12">
-                       <div class="d-flex">
-                         <h5 class="color-primary mt-2 mb-0">
-                          Ministry of Corporate Affairs
-                        </h5>
-                        <span
-                          class="color-yellow small-text pt-1 bg_primary rounded px-2 mt-2 d-inline-block ms-3"
-                          >AUTOFILL</span
-                        >
-                       </div>
+                        <div class="d-flex">
+                          <h5 class="color-primary fw-semibold mt-2 mb-0">
+                            Ministry of Corporate Affairs
+                          </h5>
+                          <span
+                            class="color-yellow fw-bold small-text pt-1 bg_primary rounded px-2 mt-2 d-inline-block ms-3"
+                            >AUTOFILL</span
+                          >
+                        </div>
                         <p class="color-primary mt-2 opacity-text">
                           We will fetch company details from the MCA database
                           using your CIN (Corporate Identification Number) to
@@ -424,29 +493,29 @@
                             >To attach document</label
                           >
                           <div
-                      class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                    >
-                      <!-- File name label -->
-                      <div class="text-muted mb-0" id="fileLabel">
-                        No file chosen
-                      </div>
+                            class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                          >
+                            <!-- File name label -->
+                            <div class="text-muted mb-0" id="fileLabel">
+                              No file chosen
+                            </div>
 
-                      <!-- Upload icon -->
-                      <div>
-                        <img
-                          src="assets/img/upload.svg"
-                          alt="Upload Icon"
-                          class="upload-icon"
-                        />
-                      </div>
+                            <!-- Upload icon -->
+                            <div>
+                              <img
+                                src="assets/img/upload.svg"
+                                alt="Upload Icon"
+                                class="upload-icon"
+                              />
+                            </div>
 
-                      <!-- Transparent file input -->
-                      <input
-                        type="file"
-                        class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                        id="customFile"
-                      />
-                    </div>
+                            <!-- Transparent file input -->
+                            <input
+                              type="file"
+                              class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                              id="customFile"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -486,20 +555,20 @@
                 </div>
               </div>
               <!--FSSAI-->
-              <div class="container mt-5">
+              <div class="container p-0 mt-5">
                 <div class="row g-3 align-items-start">
                   <!-- CIN Info and Upload Section -->
                   <div class="col-md-5">
                     <div class="row">
                       <!-- CIN Text and AutoFill -->
                       <div class="col-md-12">
-                       <div class="d-flex">
-                        <h5 class="color-primary mt-2 mb-0">FSSAI</h5>
-                        <span
-                          class="color-yellow small-text pt-1 bg_primary rounded px-2 mt-2 d-inline-block ms-3"
-                          >AUTOFILL</span
-                        >
-                       </div>
+                        <div class="d-flex">
+                          <h5 class="color-primary fw-semibold mt-2 mb-0">FSSAI</h5>
+                          <span
+                            class="color-yellow small-text pt-1 fw-bold bg_primary rounded px-2 mt-2 d-inline-block ms-3"
+                            >AUTOFILL</span
+                          >
+                        </div>
                         <p class="color-primary mt-2 opacity-text">
                           We will use the FSSAI license number to verify your
                           food vendor registration and pre-fill
@@ -514,29 +583,29 @@
                             >Certificate</label
                           >
                           <div
-                      class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                    >
-                      <!-- File name label -->
-                      <div class="text-muted mb-0" id="fileLabel">
-                        No file chosen
-                      </div>
+                            class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                          >
+                            <!-- File name label -->
+                            <div class="text-muted mb-0" id="fileLabel">
+                              No file chosen
+                            </div>
 
-                      <!-- Upload icon -->
-                      <div>
-                        <img
-                          src="assets/img/upload.svg"
-                          alt="Upload Icon"
-                          class="upload-icon"
-                        />
-                      </div>
+                            <!-- Upload icon -->
+                            <div>
+                              <img
+                                src="assets/img/upload.svg"
+                                alt="Upload Icon"
+                                class="upload-icon"
+                              />
+                            </div>
 
-                      <!-- Transparent file input -->
-                      <input
-                        type="file"
-                        class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                        id="customFile"
-                      />
-                    </div>
+                            <!-- Transparent file input -->
+                            <input
+                              type="file"
+                              class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                              id="customFile"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -576,7 +645,7 @@
                 </div>
               </div>
               <!--Cheque-->
-              <div class="container mt-5">
+              <div class="container p-0 mt-5">
                 <div class="row g-3 align-items-start">
                   <!-- CIN Info and Upload Section -->
                   <div class="col-md-5">
@@ -584,11 +653,11 @@
                       <!-- CIN Text and AutoFill -->
                       <div class="col-md-12">
                         <div class="d-flex">
-                          <h5 class="color-primary mt-2 mb-0">
+                          <h5 class="color-primary fw-semibold mt-2 mb-0">
                             Cancelled Cheque
                           </h5>
                           <span
-                            class="color-yellow small-text pt-1 bg_primary rounded px-2 mt-2 d-inline-block ms-3"
+                            class="color-yellow small-text fw-bold pt-1 bg_primary rounded px-2 mt-2 d-inline-block ms-3"
                             >AUTOFILL</span
                           >
                         </div>
@@ -606,29 +675,29 @@
                             >To attach document</label
                           >
                           <div
-                      class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                    >
-                      <!-- File name label -->
-                      <div class="text-muted mb-0" id="fileLabel">
-                        No file chosen
-                      </div>
+                            class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                          >
+                            <!-- File name label -->
+                            <div class="text-muted mb-0" id="fileLabel">
+                              No file chosen
+                            </div>
 
-                      <!-- Upload icon -->
-                      <div>
-                        <img
-                          src="assets/img/upload.svg"
-                          alt="Upload Icon"
-                          class="upload-icon"
-                        />
-                      </div>
+                            <!-- Upload icon -->
+                            <div>
+                              <img
+                                src="assets/img/upload.svg"
+                                alt="Upload Icon"
+                                class="upload-icon"
+                              />
+                            </div>
 
-                      <!-- Transparent file input -->
-                      <input
-                        type="file"
-                        class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                        id="customFile"
-                      />
-                    </div>
+                            <!-- Transparent file input -->
+                            <input
+                              type="file"
+                              class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                              id="customFile"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -666,7 +735,7 @@
                 </div>
               </div>
 
-              <div class="d-flex justify-content-start mx-3 my-4">
+              <div class="d-flex justify-content-start my-4">
                 <button
                   class="btn bg_secondary color-white"
                   (click)="nextTab()"
@@ -703,7 +772,9 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Name of  the person filling the form</label>
+                          <label class="form-label"
+                            >Name of the person filling the form</label
+                          >
                           <input
                             type="text"
                             class="form-control"
@@ -712,10 +783,13 @@
                           />
                         </div>
                       </div>
-                       <div class="d-inline-flex align-items-start my-2 gap-3 w-100">
+                      <div
+                        class="d-inline-flex align-items-start my-2 gap-3 w-100"
+                      >
                         <input type="checkbox" class="mt-1" />
                         <p class="color-primary mb-0">
-                          I hereby declare that I am authorized to fill the vendor registration form on behalf of my organization.
+                          I hereby declare that I am authorized to fill the
+                          vendor registration form on behalf of my organization.
                         </p>
                       </div>
                       <div class="col-md-12">
@@ -732,19 +806,19 @@
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label">Organization Type</label>
-                           <select
+                          <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Select</option>
+                            <option value="">Select</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Vendor type</label>
-                           <select
-                           class="form-control form-select"
+                          <select
+                            class="form-control form-select"
                             placceholder="Select"
                           >
                             <option selected>Food</option>
@@ -755,20 +829,24 @@
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Composite GST Scheme</label>
-                           <select
+                          <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Select</option>
+                            <option value="">Select</option>
                           </select>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="footer p-2 border-radius-bottom border-top bg-lighter-blue">
+                  <div
+                    class="footer p-2 border-radius-bottom border-top bg-lighter-blue"
+                  >
                     <div class="d-flex px-2 justify-content-end">
                       <button
-                        class="btn bg_secondary color-white px-4"  (click)="nextTab()">
+                        class="btn bg_secondary color-white px-4"
+                        (click)="nextTab()"
+                      >
                         Next
                       </button>
                     </div>
@@ -780,8 +858,12 @@
         </div>
 
         <!-- Tab 3 -->
-        <div class="tab-pane mt-4" [class.active]="tabIndex === 2" id="basictab3">
-            <div class="row">
+        <div
+          class="tab-pane mt-4"
+          [class.active]="tabIndex === 2"
+          id="basictab3"
+        >
+          <div class="row">
             <div class="col-lg-12">
               <h2 class="color-primary">Vendor Registration Invitation</h2>
             </div>
@@ -826,7 +908,7 @@
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Zip Code</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder="8245678"
@@ -837,18 +919,18 @@
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Country</label>
-                           <select
-                           class="form-control form-select"
+                          <select
+                            class="form-control form-select"
                             placceholder="Select"
                           >
                             <option selected>India</option>
                           </select>
                         </div>
                       </div>
-                       <div class="col-md-6">
+                      <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">State</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder="Haryana"
@@ -859,24 +941,27 @@
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">City</label>
-                           <select
+                          <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Faridabad</option>
+                            <option value="">Faridabad</option>
                           </select>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="footer border-radius-bottom p-2 border-top bg-lighter-blue">
+                  <div
+                    class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
+                  >
                     <div class="d-flex px-2 justify-content-between">
-                         <button
-                        class="btn btn-outline px-4"  (click)="prevTab()">
+                      <button class="btn btn-outline px-4" (click)="prevTab()">
                         Previous
                       </button>
                       <button
-                        class="btn bg_secondary color-white px-4"  (click)="nextTab()">
+                        class="btn bg_secondary color-white px-4"
+                        (click)="nextTab()"
+                      >
                         Next
                       </button>
                     </div>
@@ -888,8 +973,12 @@
         </div>
 
         <!-- Tab 4 -->
-        <div class="tab-pane mt-4" [class.active]="tabIndex === 3" id="basictab4">
-            <div class="row">
+        <div
+          class="tab-pane mt-4"
+          [class.active]="tabIndex === 3"
+          id="basictab4"
+        >
+          <div class="row">
             <div class="col-lg-12">
               <h2 class="color-primary">Vendor Registration Invitation</h2>
             </div>
@@ -903,7 +992,10 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Name of the Contact person in your Organization</label>
+                          <label class="form-label"
+                            >Name of the Contact person in your
+                            Organization</label
+                          >
                           <input
                             type="text"
                             class="form-control"
@@ -913,7 +1005,9 @@
                       </div>
                       <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Designation of Contact Person</label>
+                          <label class="form-label"
+                            >Designation of Contact Person</label
+                          >
                           <input
                             type="text"
                             class="form-control"
@@ -934,7 +1028,7 @@
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label">Contact 2</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder=""
@@ -944,17 +1038,17 @@
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label">Contact 3</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder=""
                           />
                         </div>
                       </div>
-                       <div class="col-md-6">
+                      <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Email ID 1</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder="ashish.sharma@mobilise.co.in"
@@ -965,7 +1059,7 @@
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Email ID 2</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder=""
@@ -975,7 +1069,7 @@
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">fAX No</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder="(123) 456-7890"
@@ -983,10 +1077,10 @@
                           />
                         </div>
                       </div>
-                       <div class="col-md-6">
+                      <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">PO Email</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder="po@example.com"
@@ -997,7 +1091,7 @@
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label">Remittance Email</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder=""
@@ -1006,14 +1100,17 @@
                       </div>
                     </div>
                   </div>
-                  <div class="footer border-radius-bottom p-2 border-top bg-lighter-blue">
+                  <div
+                    class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
+                  >
                     <div class="d-flex px-2 justify-content-between">
-                         <button
-                        class="btn btn-outline px-4"  (click)="prevTab()">
+                      <button class="btn btn-outline px-4" (click)="prevTab()">
                         Previous
                       </button>
                       <button
-                        class="btn bg_secondary color-white px-4"  (click)="nextTab()">
+                        class="btn bg_secondary color-white px-4"
+                        (click)="nextTab()"
+                      >
                         Next
                       </button>
                     </div>
@@ -1024,8 +1121,12 @@
           </div>
         </div>
         <!-- Tab 5 -->
-          <div class="tab-pane mt-4" [class.active]="tabIndex === 4" id="basictab5">
-            <div class="row">
+        <div
+          class="tab-pane mt-4"
+          [class.active]="tabIndex === 4"
+          id="basictab5"
+        >
+          <div class="row">
             <div class="col-lg-12">
               <h2 class="color-primary">Vendor Registration Invitation</h2>
             </div>
@@ -1062,7 +1163,7 @@
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Branch Name</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder="NHPC Chowk"
@@ -1070,10 +1171,10 @@
                           />
                         </div>
                       </div>
-                       <div class="col-md-6">
+                      <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Branch Address</label>
-                           <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder="Sector 28, NHPC CHOWK"
@@ -1084,18 +1185,18 @@
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Account Type</label>
-                            <select
+                          <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Select</option>
+                            <option value="">Select</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">IFSC Code</label>
-                            <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder="546545484514"
@@ -1103,20 +1204,20 @@
                           />
                         </div>
                       </div>
-                       <div class="col-md-6">
+                      <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Micr Code</label>
-                            <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder=""
                           />
                         </div>
                       </div>
-                       <div class="col-md-6">
+                      <div class="col-md-6">
                         <div class="form-group mb-3">
                           <label class="form-label">Beneficiary Name</label>
-                            <input
+                          <input
                             type="text"
                             class="form-control"
                             placeholder=""
@@ -1125,14 +1226,17 @@
                       </div>
                     </div>
                   </div>
-                  <div class="footer border-radius-bottom p-2 border-top bg-lighter-blue">
+                  <div
+                    class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
+                  >
                     <div class="d-flex px-2 justify-content-between">
-                         <button
-                        class="btn btn-outline px-4"  (click)="prevTab()">
+                      <button class="btn btn-outline px-4" (click)="prevTab()">
                         Previous
                       </button>
                       <button
-                        class="btn bg_secondary color-white px-4"  (click)="nextTab()">
+                        class="btn bg_secondary color-white px-4"
+                        (click)="nextTab()"
+                      >
                         Next
                       </button>
                     </div>
@@ -1143,81 +1247,213 @@
           </div>
         </div>
         <!-- Tab 6 -->
-          <div class="tab-pane mt-4" [class.active]="tabIndex === 5" id="basictab6">
-            <div class="row">
+        <div
+          class="tab-pane mt-4"
+          [class.active]="tabIndex === 5"
+          id="basictab6"
+        >
+          <div class="row">
             <div class="col-lg-12">
               <h2 class="color-primary">Vendor Registration Invitation</h2>
             </div>
             <div>
               <div class="card my-3">
                 <div class="card-body p-0">
-                  <div class="header p-2 px-3 border-bottom d-flex justify-content-between align-items-center">
-                    <h4 class="color-primary  mb-0">Code of Conduct and Charters</h4>
-                    <img src="assets/img/download.svg" alt="download">
+                  <div
+                    class="header p-2 px-3 border-bottom d-flex justify-content-between align-items-center"
+                  >
+                    <h4 class="color-primary mb-0">
+                      Code of Conduct and Charters
+                    </h4>
+                    <img src="assets/img/download.svg" alt="download" />
                   </div>
                   <div class="cand-content p-3">
                     <div class="row">
-                     <div class="p-3">
+                      <div class="p-3">
                         <div class="d-flex justify-content-between">
-                            <div class="col-md-6">
-                                <h6 class="color-primary">Supplier Code of Conduct</h6>
-                            </div>
-                            <div class="col-md-4"></div>
-                            <div class="col-md-2 d-flex justify-content-end">
-                                <small class="color-primary text-nowrap me-3 mt-2">I Agree</small>
-                                 <select
-                            class="form-control form-select"
-                            placceholder="Select"
-                          >
-                          <option value="">Yes</option>
-                          </select>
-                            </div>
+                          <div class="col-md-6">
+                            <h6 class="color-primary">
+                              Supplier Code of Conduct
+                            </h6>
+                          </div>
+                          <div class="col-md-4"></div>
+                          <div class="col-md-2 d-flex justify-content-end">
+                            <small class="color-primary text-nowrap me-3 mt-2"
+                              >I Agree</small
+                            >
+                            <select
+                              class="form-control form-select"
+                              placceholder="Select"
+                            >
+                              <option value="">Yes</option>
+                            </select>
+                          </div>
                         </div>
                         <div class="content-body overfllow mt-4">
-                            <p class="color-primary fw-semibold">
-                                Introduction<br>
-                                Conducting responsible business with high ethical and environmental standards is fundamental to Sodexo. In light of this, we have established this Supplier Code of Conduct to articulate our expectations of those with whom we conduct business including those businesses with which we have continuing supply relationships.
-                            </p>
-                            <p class="color-primary mt-3">
-                                This Supplier Code of Conduct ("Code") sets forth Sodexo's expectations of suppliers, vendors, contractors and others with whom Sodexo conducts business (including their affiliates, and collectively referred to as "Suppliers") with respect to sound and responsible ethical, social, labor and environmental practices. Sodexo recognizes that Suppliers operate in different legal and cultural environments throughout the world. Regardless, this Code sets forth the minimum requirements that we expect our Suppliers to meet, or to ensure such requirements are consistent with their own business principles, to do business with Sodexo. Consequently, Suppliers are expected to communicate the principles of this Code throughout their supply chain.
-                                To uphold the critical priority of this approach, Sodexo reserves the right to carry out the controls that it deems reasonably necessary to ensure that this Code is respected throughout its Supply Chain. This may include self-assessments, the use of questionnaires conducted by third parties (e.g.: EcoVadis), and/or on-site Sodexo or third-party audits of Suppliers (announced, semi-announced or unannounced).<br>
-                                Sodexo acknowledges that Suppliers may need a reasonable period of time to address areas in which they may not be in compliance with the Code. We believe that compliance is best achieved through a step-by step process of continuous improvement over a reasonable period of time, which includes dialogue with Sodexo. With this in mind, Sodexo has developed the Sodexo Supplier Code of Conduct - Supplier Guide which guides Suppliers as to how they can implement the Sodexo Supplier Code of Conduct. Sodexo invites its Suppliers to keep us regularly informed about their actions and improvement plans concerning the Code of Conduct and welcomes evidence where exceeding the minimum is achieved by our Suppliers.
-                                When local law sets higher standards than our Code of Conduct, the law should always prevail. If, on the other hand, our Code of Conduct provides for more stringent rules, they must prevail, unless this results in illegal activity.
-                                Sodexo encourages its Suppliers to support the achievement of its corporate responsibility commitments (available on sodexo.com pages) as well as the United Nations Sustainable Development Goals.
-                                The Code is aligned with the 2030 United Nations Sustainable Development Goals as at the release date of this Code.
-                            </p>
-                            <p class="color-primary mt-3 mb-0 fw-semibold">1. Business integrity</p>
-                            <p class="color-primary">Sodexo is committed to the highest standards of business integrity. We do not tolerate any practice that inconsistent with the principles of honesty, integrity and fairness, anywhere in the world where we do business.
-                                Sodexo seeks to identify Suppliers that conduct business with ethical standards consistent with our own. Sodexo's ethical standards are embodied in our Code of Conduct (Business Integrity Guide) which provides in part (and as defined therein where required):
-                                Obey all applicable laws and regulations
-                            </p>
-                             <p class="color-primary mt-3 mb-0 fw-semibold">2. Environment</p>
-                            <p class="color-primary">Sodexo is committed to protecting and restoring natural resources on which we all depend. By working together with all our stakeholders, we aim to address climate change, biodiversity loss and water stress, and create a more sustainable world.
-                            Suppliers shall where reasonably possible, demonstrate their commitment to decarbonization by signing up to the Science Based Targets Initiative (SBTI). Suppliers shall abide by all applicable environmental laws and regulations and manage their environmental impact responsibly in line with applicable laws and regulations and in alignment with our 2040 Net Zero goal.
-                            Suppliers shall work to sustain, protect and restore the environment and have clear and publicly available environmental policy statement and targets (including greenhouse gas (GHG) emission reduction commitments) that address the key material impacts of their operations and value chains. Suppliers shall measure, manage and publicly report the energy and greenhouse gas (GHG) emissions associated with their operations globally and related to the products and/or services provided to us.
-                            Suppliers shallensure that their sourcing, farming, manufacturing, and/or distribution activities do not adversely affect biodiversity and ecosystems.
-                            </p>
-                             <p class="color-primary mt-3 mb-0 fw-semibold">3. Inclusive supply chain</p>
-                            <p class="color-primary">Sodexo's Supply Chain Inclusion Program is an integral part of the Group's commitment to improve the Quality of Life for people working for our Suppliers, the development of local communities and demonstrates our commitment to engage and influence stakeholders on social and economic responsibility throughout the supply chain.
-                               Engaging diverse and inclusive Suppliers within the local communities where we operate gives both our Suppliers and Sodexo the advantage of working with the best, most agile and innovative companies.
-                               Sodexo expects its Suppliers to demonstrate a diverse workforce composition actively embracing workforce age, gender, national or ethnic origin, social origin, religion, language, political beliefs, sexual orientation, physical ability and promoting supply chain inclusion throughout their own supply chains. Suppliers shall promote and work with Sodexo to ensure new and growing opportunities for diverse businesses across the globe.
-                            </p>
-                             <p class="color-primary mt-3 mb-0 fw-semibold">4. Protection of information and data privacy</p>
-                            <p class="color-primary">Confidentiality and protection of information Sodexo is committed to protecting the Confidential Information of everyone Sodexo does business with, including suppliers, clients, customers, consumers and employees, ensuring that such Confidential Information is used in full compliance with applicable laws and Sodexo policies and only related to Sodexo business.
-                            Suppliers shall comply with all relevant laws and regulations governing proprietary information and safeguard all information received by Sodexo by
-                            </p>
+                          <p class="color-primary fw-semibold">
+                            Introduction<br />
+                            Conducting responsible business with high ethical
+                            and environmental standards is fundamental to
+                            Sodexo. In light of this, we have established this
+                            Supplier Code of Conduct to articulate our
+                            expectations of those with whom we conduct business
+                            including those businesses with which we have
+                            continuing supply relationships.
+                          </p>
+                          <p class="color-primary mt-3">
+                            This Supplier Code of Conduct ("Code") sets forth
+                            Sodexo's expectations of suppliers, vendors,
+                            contractors and others with whom Sodexo conducts
+                            business (including their affiliates, and
+                            collectively referred to as "Suppliers") with
+                            respect to sound and responsible ethical, social,
+                            labor and environmental practices. Sodexo recognizes
+                            that Suppliers operate in different legal and
+                            cultural environments throughout the world.
+                            Regardless, this Code sets forth the minimum
+                            requirements that we expect our Suppliers to meet,
+                            or to ensure such requirements are consistent with
+                            their own business principles, to do business with
+                            Sodexo. Consequently, Suppliers are expected to
+                            communicate the principles of this Code throughout
+                            their supply chain. To uphold the critical priority
+                            of this approach, Sodexo reserves the right to carry
+                            out the controls that it deems reasonably necessary
+                            to ensure that this Code is respected throughout its
+                            Supply Chain. This may include self-assessments, the
+                            use of questionnaires conducted by third parties
+                            (e.g.: EcoVadis), and/or on-site Sodexo or
+                            third-party audits of Suppliers (announced,
+                            semi-announced or unannounced).<br />
+                            Sodexo acknowledges that Suppliers may need a
+                            reasonable period of time to address areas in which
+                            they may not be in compliance with the Code. We
+                            believe that compliance is best achieved through a
+                            step-by step process of continuous improvement over
+                            a reasonable period of time, which includes dialogue
+                            with Sodexo. With this in mind, Sodexo has developed
+                            the Sodexo Supplier Code of Conduct - Supplier Guide
+                            which guides Suppliers as to how they can implement
+                            the Sodexo Supplier Code of Conduct. Sodexo invites
+                            its Suppliers to keep us regularly informed about
+                            their actions and improvement plans concerning the
+                            Code of Conduct and welcomes evidence where
+                            exceeding the minimum is achieved by our Suppliers.
+                            When local law sets higher standards than our Code
+                            of Conduct, the law should always prevail. If, on
+                            the other hand, our Code of Conduct provides for
+                            more stringent rules, they must prevail, unless this
+                            results in illegal activity. Sodexo encourages its
+                            Suppliers to support the achievement of its
+                            corporate responsibility commitments (available on
+                            sodexo.com pages) as well as the United Nations
+                            Sustainable Development Goals. The Code is aligned
+                            with the 2030 United Nations Sustainable Development
+                            Goals as at the release date of this Code.
+                          </p>
+                          <p class="color-primary mt-3 mb-0 fw-semibold">
+                            1. Business integrity
+                          </p>
+                          <p class="color-primary">
+                            Sodexo is committed to the highest standards of
+                            business integrity. We do not tolerate any practice
+                            that inconsistent with the principles of honesty,
+                            integrity and fairness, anywhere in the world where
+                            we do business. Sodexo seeks to identify Suppliers
+                            that conduct business with ethical standards
+                            consistent with our own. Sodexo's ethical standards
+                            are embodied in our Code of Conduct (Business
+                            Integrity Guide) which provides in part (and as
+                            defined therein where required): Obey all applicable
+                            laws and regulations
+                          </p>
+                          <p class="color-primary mt-3 mb-0 fw-semibold">
+                            2. Environment
+                          </p>
+                          <p class="color-primary">
+                            Sodexo is committed to protecting and restoring
+                            natural resources on which we all depend. By working
+                            together with all our stakeholders, we aim to
+                            address climate change, biodiversity loss and water
+                            stress, and create a more sustainable world.
+                            Suppliers shall where reasonably possible,
+                            demonstrate their commitment to decarbonization by
+                            signing up to the Science Based Targets Initiative
+                            (SBTI). Suppliers shall abide by all applicable
+                            environmental laws and regulations and manage their
+                            environmental impact responsibly in line with
+                            applicable laws and regulations and in alignment
+                            with our 2040 Net Zero goal. Suppliers shall work to
+                            sustain, protect and restore the environment and
+                            have clear and publicly available environmental
+                            policy statement and targets (including greenhouse
+                            gas (GHG) emission reduction commitments) that
+                            address the key material impacts of their operations
+                            and value chains. Suppliers shall measure, manage
+                            and publicly report the energy and greenhouse gas
+                            (GHG) emissions associated with their operations
+                            globally and related to the products and/or services
+                            provided to us. Suppliers shallensure that their
+                            sourcing, farming, manufacturing, and/or
+                            distribution activities do not adversely affect
+                            biodiversity and ecosystems.
+                          </p>
+                          <p class="color-primary mt-3 mb-0 fw-semibold">
+                            3. Inclusive supply chain
+                          </p>
+                          <p class="color-primary">
+                            Sodexo's Supply Chain Inclusion Program is an
+                            integral part of the Group's commitment to improve
+                            the Quality of Life for people working for our
+                            Suppliers, the development of local communities and
+                            demonstrates our commitment to engage and influence
+                            stakeholders on social and economic responsibility
+                            throughout the supply chain. Engaging diverse and
+                            inclusive Suppliers within the local communities
+                            where we operate gives both our Suppliers and Sodexo
+                            the advantage of working with the best, most agile
+                            and innovative companies. Sodexo expects its
+                            Suppliers to demonstrate a diverse workforce
+                            composition actively embracing workforce age,
+                            gender, national or ethnic origin, social origin,
+                            religion, language, political beliefs, sexual
+                            orientation, physical ability and promoting supply
+                            chain inclusion throughout their own supply chains.
+                            Suppliers shall promote and work with Sodexo to
+                            ensure new and growing opportunities for diverse
+                            businesses across the globe.
+                          </p>
+                          <p class="color-primary mt-3 mb-0 fw-semibold">
+                            4. Protection of information and data privacy
+                          </p>
+                          <p class="color-primary">
+                            Confidentiality and protection of information Sodexo
+                            is committed to protecting the Confidential
+                            Information of everyone Sodexo does business with,
+                            including suppliers, clients, customers, consumers
+                            and employees, ensuring that such Confidential
+                            Information is used in full compliance with
+                            applicable laws and Sodexo policies and only related
+                            to Sodexo business. Suppliers shall comply with all
+                            relevant laws and regulations governing proprietary
+                            information and safeguard all information received
+                            by Sodexo by
+                          </p>
                         </div>
-                     </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="footer border-radius-bottom p-2 border-top bg-lighter-blue">
+                  <div
+                    class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
+                  >
                     <div class="d-flex px-2 justify-content-between">
-                         <button
-                        class="btn btn-outline px-4"  (click)="prevTab()">
+                      <button class="btn btn-outline px-4" (click)="prevTab()">
                         Previous
                       </button>
                       <button
-                        class="btn bg_secondary color-white px-4"  (click)="nextTab()">
+                        class="btn bg_secondary color-white px-4"
+                        (click)="nextTab()"
+                      >
                         Next
                       </button>
                     </div>
@@ -1228,8 +1464,12 @@
           </div>
         </div>
         <!--Tab 7-->
-         <div class="tab-pane mt-4" [class.active]="tabIndex === 6" id="basictab7">
-            <div class="row">
+        <div
+          class="tab-pane mt-4"
+          [class.active]="tabIndex === 6"
+          id="basictab7"
+        >
+          <div class="row">
             <div class="col-lg-12">
               <h2 class="color-primary">Vendor Registration Invitation</h2>
             </div>
@@ -1243,76 +1483,102 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Do you have documented safety orientation & training Programs for the scope of services </label>
+                          <label class="form-label"
+                            >Do you have documented safety orientation &
+                            training Programs for the scope of services
+                          </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Select</option>
+                            <option value="">Select</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Do you have the capability of preparing Risk Assessment & safe system of work (Standard Operating Procedure) for the SOW </label>
+                          <label class="form-label"
+                            >Do you have the capability of preparing Risk
+                            Assessment & safe system of work (Standard Operating
+                            Procedure) for the SOW
+                          </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Select</option>
+                            <option value="">Select</option>
                           </select>
                         </div>
-                      </div><div class="col-md-12">
+                      </div>
+                      <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Do you have documented safety orientation & training Programs for the scope of services  </label>
+                          <label class="form-label"
+                            >Do you have documented safety orientation &
+                            training Programs for the scope of services
+                          </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Select</option>
+                            <option value="">Select</option>
                           </select>
                         </div>
-                      </div><div class="col-md-12">
+                      </div>
+                      <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Do you have documented safety orientation & training Programs for the scope of services  </label>
+                          <label class="form-label"
+                            >Do you have documented safety orientation &
+                            training Programs for the scope of services
+                          </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Select</option>
+                            <option value="">Select</option>
                           </select>
                         </div>
-                      </div><div class="col-md-12">
+                      </div>
+                      <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Do you have documented safety orientation & training Programs for the scope of services  </label>
+                          <label class="form-label"
+                            >Do you have documented safety orientation &
+                            training Programs for the scope of services
+                          </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Select</option>
+                            <option value="">Select</option>
                           </select>
                         </div>
-                      </div><div class="col-md-12">
+                      </div>
+                      <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Do you have documented safety orientation & training Programs for the scope of services  </label>
+                          <label class="form-label"
+                            >Do you have documented safety orientation &
+                            training Programs for the scope of services
+                          </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
-                          <option value="">Select</option>
+                            <option value="">Select</option>
                           </select>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="footer border-radius-bottom p-2 border-top bg-lighter-blue">
+                  <div
+                    class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
+                  >
                     <div class="d-flex px-2 justify-content-between">
-                         <button
-                        class="btn btn-outline px-4"  (click)="prevTab()">
+                      <button class="btn btn-outline px-4" (click)="prevTab()">
                         Previous
                       </button>
                       <button
-                        class="btn bg_secondary color-white px-4"  (click)="nextTab()">
+                        class="btn bg_secondary color-white px-4"
+                        (click)="nextTab()"
+                      >
                         Next
                       </button>
                     </div>
@@ -1322,9 +1588,13 @@
             </div>
           </div>
         </div>
-<!-- Tab 8 -->
-  <div class="tab-pane mt-4" [class.active]="tabIndex === 7" id="basictab8">
-            <div class="row">
+        <!-- Tab 8 -->
+        <div
+          class="tab-pane mt-4"
+          [class.active]="tabIndex === 7"
+          id="basictab8"
+        >
+          <div class="row">
             <div class="col-lg-12">
               <h2 class="color-primary">Vendor Registration Invitation</h2>
             </div>
@@ -1336,101 +1606,124 @@
                   </div>
                   <div class="cand-content p-3">
                     <div class="row">
-                        <div class="table-responsive">
-                          <table class="table align-middle custom-table">
-                            <thead>
-                              <tr>
-                                <th class="text-center">S.No</th>
-                                <th>Service Family</th>
-                                <th>Service Class</th>
-                                <th>Service</th>
-                                <th class="text-center">Select if applicable</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="text-center">1</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Air Compressor</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">2</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Software</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">3</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Electrical Equipment</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">4</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Steam Boiler</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">5</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Sports</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">6</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Furniture</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">7</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Fire Protection</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">8</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Heating, Ventilation</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">9</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Moving Equipment</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">10</td>
-                                <td>Hard FM Service</td>
-                                <td>Asset Management - Technical Maintained</td>
-                                <td>Visual</td>
-                                <td class="text-center"><input type="checkbox" /></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                      <div class="table-responsive">
+                        <table class="table align-middle custom-table">
+                          <thead>
+                            <tr>
+                              <th class="text-center">S.No</th>
+                              <th>Service Family</th>
+                              <th>Service Class</th>
+                              <th>Service</th>
+                              <th class="text-center">Select if applicable</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">1</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Air Compressor</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">2</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Software</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">3</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Electrical Equipment</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">4</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Steam Boiler</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">5</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Sports</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">6</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Furniture</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">7</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Fire Protection</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">8</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Heating, Ventilation</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">9</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Moving Equipment</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">10</td>
+                              <td>Hard FM Service</td>
+                              <td>Asset Management - Technical Maintained</td>
+                              <td>Visual</td>
+                              <td class="text-center">
+                                <input type="checkbox" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
-                  <div class="footer border-radius-bottom p-2 border-top bg-lighter-blue">
+                  <div
+                    class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
+                  >
                     <div class="d-flex px-2 justify-content-between">
-                         <button
-                        class="btn btn-outline px-4"  (click)="prevTab()">
+                      <button class="btn btn-outline px-4" (click)="prevTab()">
                         Previous
                       </button>
                       <button
-                        class="btn bg_secondary color-white px-4"  (click)="nextTab()">
+                        class="btn bg_secondary color-white px-4"
+                        (click)="nextTab()"
+                      >
                         Next
                       </button>
                     </div>
@@ -1441,8 +1734,12 @@
           </div>
         </div>
         <!-- Tab 9 -->
-          <div class="tab-pane mt-4" [class.active]="tabIndex === 8" id="basictab9">
-            <div class="row">
+        <div
+          class="tab-pane mt-4"
+          [class.active]="tabIndex === 8"
+          id="basictab9"
+        >
+          <div class="row">
             <div class="col-lg-12">
               <h2 class="color-primary">Vendor Registration Invitation</h2>
             </div>
@@ -1454,88 +1751,115 @@
                   </div>
                   <div class="cand-content p-3">
                     <div class="row">
-                        <div class="table-responsive">
-                          <table class="table align-middle custom-table">
-                            <thead>
-                              <tr>
-                                <th class="text-center">S.No</th>
-                                <th>Question</th>
-                                <th>Answer</th>
-                                <th>Document Type</th>
-                                <th>Document</th>
-                                <th>Authority</th>
-                                <th>Validity</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="text-center">1</td>
-                                <td>PAN</td>
-                                <td><img src="assets/img/mage_edit.svg" alt="edit"></td>
-                                <td>NA</td>
-                                <td>Not Uploaded</td>
-                                <td>NA</td>
-                                <td>05-06-2025</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">2</td>
-                                <td>Cancelled Cheque</td>
-                                <td><img src="assets/img/mage_edit.svg" alt="edit"></td>
-                                <td>NA</td>
-                                <td>Not Uploaded</td>
-                                <td>NA</td>
-                                <td>Na</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">3</td>
-                                <td>GST</td>
-                                <td><img src="assets/img/mage_edit.svg" alt="edit"></td>
-                                <td>NA</td>
-                                <td>Not Uploaded</td>
-                                <td>NA</td>
-                                <td>05-06-2025</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">4</td>
-                                <td>GST Exemption Certificate</td>
-                                <td><img src="assets/img/mage_edit.svg" alt="edit"></td>
-                                <td>NA</td>
-                                <td>Not Uploaded</td>
-                                <td>NA</td>
-                                <td>05-06-2025</td>
-                              </tr>
-                              <tr>
-                                <td class="text-center">5</td>
-                                <td>Do you have registration with PF ?</td>
-                                <td><img src="assets/img/mage_edit.svg" alt="edit"></td>
-                                <td>NA</td>
-                                <td>Not Uploaded</td>
-                                <td>NA</td>
-                                <td>Na</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                      <div class="table-responsive">
+                        <table class="table align-middle custom-table">
+                          <thead>
+                            <tr>
+                              <th class="text-center">S.No</th>
+                              <th>Question</th>
+                              <th>Answer</th>
+                              <th>Document Type</th>
+                              <th>Document</th>
+                              <th>Authority</th>
+                              <th>Validity</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">1</td>
+                              <td>PAN</td>
+                              <td>
+                                <img
+                                  src="assets/img/mage_edit.svg"
+                                  alt="edit"
+                                />
+                              </td>
+                              <td>NA</td>
+                              <td>Not Uploaded</td>
+                              <td>NA</td>
+                              <td>05-06-2025</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">2</td>
+                              <td>Cancelled Cheque</td>
+                              <td>
+                                <img
+                                  src="assets/img/mage_edit.svg"
+                                  alt="edit"
+                                />
+                              </td>
+                              <td>NA</td>
+                              <td>Not Uploaded</td>
+                              <td>NA</td>
+                              <td>Na</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">3</td>
+                              <td>GST</td>
+                              <td>
+                                <img
+                                  src="assets/img/mage_edit.svg"
+                                  alt="edit"
+                                />
+                              </td>
+                              <td>NA</td>
+                              <td>Not Uploaded</td>
+                              <td>NA</td>
+                              <td>05-06-2025</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">4</td>
+                              <td>GST Exemption Certificate</td>
+                              <td>
+                                <img
+                                  src="assets/img/mage_edit.svg"
+                                  alt="edit"
+                                />
+                              </td>
+                              <td>NA</td>
+                              <td>Not Uploaded</td>
+                              <td>NA</td>
+                              <td>05-06-2025</td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">5</td>
+                              <td>Do you have registration with PF ?</td>
+                              <td>
+                                <img
+                                  src="assets/img/mage_edit.svg"
+                                  alt="edit"
+                                />
+                              </td>
+                              <td>NA</td>
+                              <td>Not Uploaded</td>
+                              <td>NA</td>
+                              <td>Na</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
-                  <div class="footer border-radius-bottom p-2 border-top bg-lighter-blue">
+                  <div
+                    class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
+                  >
                     <div class="d-flex px-2 justify-content-between">
-                        <div>
-                             <button
-                        class="btn btn-outline px-4"  (click)="prevTab()">
-                        Previous
-                      </button>
-                        </div>
-                     <div>
+                      <div>
                         <button
-                        class="btn btn-outline me-3 px-4">
-                        Add More Document
-                      </button>
-                         <button
-                        class="btn bg_secondary color-white px-4">
-                        Submit
-                      </button>
-                     </div>
+                          class="btn btn-outline px-4"
+                          (click)="prevTab()"
+                        >
+                          Previous
+                        </button>
+                      </div>
+                      <div>
+                        <button class="btn btn-outline me-3 px-4">
+                          Add More Document
+                        </button>
+                        <button class="btn bg_secondary color-white px-4">
+                          Submit
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1548,4 +1872,3 @@
   </div>
 </div>
 <!-- Modal for Confirmation -->
-
