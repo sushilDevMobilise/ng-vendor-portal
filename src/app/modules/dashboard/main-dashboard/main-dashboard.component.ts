@@ -1,5 +1,5 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common'; // ✅ Add CommonModule
 import {
   Chart,
   DoughnutController,
@@ -14,12 +14,22 @@ Chart.register(DoughnutController, ArcElement, Tooltip, Legend, Title);
 @Component({
   selector: 'app-main-dashboard',
   standalone: true,
-  imports: [],
+  imports: [CommonModule], // ✅ Important for ngFor, ngIf, etc.
   templateUrl: './main-dashboard.component.html',
   styleUrl: './main-dashboard.component.scss',
 })
 export class MainDashboardComponent {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  timelineItems = [
+    { title: '300 Partial Amount Paid On <strong>Paypal</strong>', date: '18 Jan 2025' },
+    { title: 'New Expenses added <strong>#TR018756</strong>', date: '18 Jan 2025' },
+    { title: 'Estimate Created <strong>#ES458789</strong>', date: '18 Jan 2025' },
+    { title: '147 Created <strong>#ES458789</strong>', date: '18 Jan 2025' },
+    { title: 'Estimate Created <strong>#ES458789</strong>', date: '18 Jan 2025' },
+    { title: '147 Created <strong>#ES458789</strong>', date: '18 Jan 2025' },
+    { title: '<strong>300</strong> Partial Amount Paid On Paypal', date: '18 Jan 2025' }
+  ];
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -42,6 +52,10 @@ export class MainDashboardComponent {
           },
           options: {
             responsive: true,
+            animation: {
+              duration: 3000, // 3 seconds animation
+              easing: 'easeOutBounce' // Feel free to try other easings like 'easeInOutQuad'
+            },
             plugins: {
               legend: {
                 display: true,
