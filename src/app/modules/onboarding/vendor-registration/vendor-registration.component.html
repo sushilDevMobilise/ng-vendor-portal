@@ -99,24 +99,238 @@
             <div class="vertical-line"></div>
 
             <!-- Step Items -->
-            <div class="step-item mb-4" [class.active]="tabIndex === 0">
-              <span class="step-number">1</span>
-              <h5 class="color-primary">Auto-Fill Vendor Details</h5>
-            </div>
+            <div class="accordion step-accordion" id="stepAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse1"
+                    data-step="1"
+                    aria-expanded="true"
+                  >
+                    Auto-Fill Vendor Details
+                  </button>
+                </h2>
+                <div
+                  id="collapse1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#stepAccordion"
+                >
+                  <div class="accordion-body">
+                    Enter your GSTIN, PAN, or registration info to auto-fill key
+                    business details from official government sources—fast,
+                    accurate, and hassle-free.
+                  </div>
+                </div>
+              </div>
 
-            <div class="step-item active mb-4">
-              <span class="step-number">2</span>
-              <div>
-                <h5 class="color-primary">Company Detail</h5>
-                <small class="text-muted">
-                  We've auto-filled some fields using the document you uploaded.
-                  Please review and complete any missing info., reliable, and
-                  under your control.
-                </small>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse2"
+                    data-step="2"
+                  >
+                    Company Detail
+                  </button>
+                </h2>
+                <div
+                  id="collapse2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#stepAccordion"
+                >
+                  <div class="accordion-body">
+                    We've auto-filled some fields using the document you
+                    uploaded. Please review and complete any missing info.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse3"
+                    data-step="3"
+                  >
+                    Address Detail
+                  </button>
+                </h2>
+                <div
+                  id="collapse3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#stepAccordion"
+                >
+                  <div class="accordion-body">
+                    Review your pre-filled address or enter your registered
+                    business address to ensure accurate records and
+                    communication.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse4"
+                    data-step="4"
+                  >
+                    Contact Detail
+                  </button>
+                </h2>
+                <div
+                  id="collapse4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#stepAccordion"
+                >
+                  <div class="accordion-body">
+                    Auto-filled details from document. Please verify the
+                    information or enter your primary business contact to ensure
+                    smooth communication & timely updates.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse5"
+                    data-step="5"
+                  >
+                    Finance Detail
+                  </button>
+                </h2>
+                <div
+                  id="collapse5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#stepAccordion"
+                >
+                  <div class="accordion-body">
+                    Financial details from your document. Please review and
+                    complete your bank and payment information to enable secure
+                    and timely transactions.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse6"
+                    data-step="6"
+                  >
+                    Code of Conduct and Charters
+                  </button>
+                </h2>
+                <div
+                  id="collapse6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#stepAccordion"
+                >
+                  <div class="accordion-body">
+                    Review and acknowledge our Code of Conduct & business
+                    charters to confirm your commitment to ethical, compliant, &
+                    responsible business practices.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse7"
+                    data-step="7"
+                  >
+                    Questionnaire
+                  </button>
+                </h2>
+                <div
+                  id="collapse7"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#stepAccordion"
+                >
+                  <div class="accordion-body">
+                    Please complete this brief questionnaire to help us
+                    understand your business capabilities, compliance status,
+                    and service offerings ensuring a tailored and efficient
+                    onboarding experience.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse8"
+                    data-step="8"
+                  >
+                    Capabilities
+                  </button>
+                </h2>
+                <div
+                  id="collapse8"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#stepAccordion"
+                >
+                  <div class="accordion-body">
+                    Showcase your core capabilities to help us identify the best
+                    fit for your business.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse9"
+                    data-step="9"
+                  >
+                    Business Document
+                  </button>
+                </h2>
+                <div
+                  id="collapse9"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#stepAccordion"
+                >
+                  <div class="accordion-body">
+                    Upload your essential business documents such as licenses,
+                    certificates, and registrations to verify your credentials
+                    secure, fast, and hassle-free.
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <h5 class="step-item mb-4 color-primary">
+    <!-- <h5 class="step-item mb-4 color-primary">
               <span class="step-number">3</span> Address Detail
             </h5>
             <h5 class="step-item mb-4 color-primary">
@@ -136,11 +350,7 @@
             </h5>
             <h5 class="step-item color-primary">
               <span class="step-number">9</span> Business Document
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
+            </h5> -->
 
     <!-- Main Content -->
     <div class="col-md-9 px-4 bg-white">
@@ -156,7 +366,9 @@
               <div>
                 <h2 class="color-primary">Vendor Registration Invitation</h2>
                 <div class="d-flex">
-                  <h5 class="color-primary mt-2 fw-semibold mb-0">Business GSTIN</h5>
+                  <h5 class="color-primary mt-2 fw-semibold mb-0">
+                    Business GSTIN
+                  </h5>
                   <span
                     class="color-yellow small-text pt-1 fw-bold bg_primary rounded px-2 mt-2 ms-3"
                     >AUTOFILL</span
@@ -175,28 +387,35 @@
                     <label for="gstinFile" class="form-label"
                       >GSTIN Attachment</label
                     >
-                    <div
-                      class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                    >
-                      <!-- File name label -->
-                      <div class="text-muted mb-0" id="fileLabel">
-                        No file chosen
-                      </div>
+                    <div class="d-flex">
+                      <div
+                        class="col-md-12 position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                      >
+                        <!-- File name label -->
+                        <div class="text-muted mb-0" id="fileLabel">
+                          No file chosen
+                        </div>
 
-                      <!-- Upload icon -->
-                      <div>
-                        <img
-                          src="assets/img/upload.svg"
-                          alt="Upload Icon"
-                          class="upload-icon"
+                        <!-- Upload icon -->
+                        <div>
+                          <img
+                            src="assets/img/upload.svg"
+                            alt="Upload Icon"
+                            class="upload-icon"
+                          />
+                        </div>
+
+                        <!-- Transparent file input -->
+                        <input
+                          type="file"
+                          class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                          id="customFile"
                         />
                       </div>
-
-                      <!-- Transparent file input -->
-                      <input
-                        type="file"
-                        class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                        id="customFile"
+                      <img
+                        src="assets/img/circle-tick.svg"
+                        alt="tick"
+                        class="img-fluid ms-3"
                       />
                     </div>
                   </div>
@@ -228,11 +447,11 @@
                 <div
                   class="col-md-1 d-flex align-items-start justify-content-center pt-4"
                 >
-                  <img
+                  <!-- <img
                     src="assets/img/circle-tick.svg"
                     alt="tick"
                     class="img-fluid"
-                  />
+                  /> -->
                 </div>
 
                 <!-- Empty Column for Spacing or Future Content -->
@@ -241,23 +460,47 @@
                     <div class="card-body">
                       <div class="scroll-box">
                         <p class="color-primary me-3">
-                          सत्यमेव जयते Government of India Form GST REG-06 [See
-                          Rule 10(1)] Registration Certificate Registration
-                          Number: 09AAATC2716R8Z6 1. Legal Name 2. Trade Name,
-                          if any 3. 4. Constitution of Business Address of
-                          Principal Place of Business COUNCIL OF SCIENTIFIC AND
-                          INDUSTRIAL RESEARCH CENTRAL DRUG RESEARCH INSTITUTE
-                          Society/Club/ Trust/ AOP 1, CDRI, SITAPUR ROAD,
-                          JANKIPURAM, Lucknow, Uttar Pradesh, 226021 5. Date of
-                          Liability 28/03/2008 6. Period of Validity From
-                          14/08/2017 To NA 7. Type of Registration Regular 8.
-                          Signature Particulars of Approving Authority Centre
-                          Signature Not Verified Digitally signed by DS GOODS
+                          सत्यमेव जयते <br />
+                          Government of India <br />
+                          Form GST REG-06<br />
+                          [See Rule 10(1)]<br />
+                          Registration Certificate <br />
+                          Registration Number: 09AAATC2716R8Z6<br />
+                          1.<br />
+                          Legal Name<br />
+                          2.<br />
+                          Trade Name, if any<br />
+                          3.<br />
+                          4.<br />
+                          Constitution of Business <br />Address of Principal
+                          Place of Business<br />
+                          COUNCIL OF SCIENTIFIC AND INDUSTRIAL RESEARCH<br />
+                          CENTRAL DRUG RESEARCH INSTITUTE<br />
+                          Society/Club/ Trust/ AOP<br />
+                          1, CDRI, SITAPUR ROAD, JANKIPURAM, Lucknow, Uttar
+                          Pradesh,<br />
+                          226021 <br />5. <br />Date of Liability
+                          <br />28/03/2008<br />
+                          6.<br />
+                          Period of Validity<br />
+                          From 14/08/2017 <br />To NA <br />7.<br />
+                          Type of Registration<br />
+                          Regular<br />
+                          8.<br />
+                          Signature<br />
+                          Particulars of Approving Authority Centre<br />
+                          Signature Not Verified<br />
+                          Digitally signed by DS GOODS<br />
                           AND SERVICES AX NETWORK 1 Date: 2018.03.01-22:12:16
-                          IST Name Designation Jurisdictional Office 9. Date of
-                          issue of Certificate Pankaj Kumar Srivastava
-                          Superintendent Lucknow Sector-18, AC 01/03/2018 Note:
-                          The registration certificate is required to be
+                          IST<br />
+                          Name <br />Designation<br />
+                          Jurisdictional Office<br />
+                          9.<br />
+                          Date of issue of Certificate<br />
+                          Pankaj Kumar Srivastava<br />
+                          Superintendent<br />
+                          Lucknow Sector-18, AC <br />01/03/2018<br />
+                          Note: The registration certificate is required to be
                           prominently displayed at all places of business in the
                           State. This is a system generated digitally signed
                           Registration Certificate issued based on the approval
@@ -271,7 +514,9 @@
               </div>
 
               <div class="d-flex mt-5">
-                <h5 class="color-primary mt-2 fw-semibold mb-0">Business PAN NUMBER</h5>
+                <h5 class="color-primary mt-2 fw-semibold mb-0">
+                  Business PAN NUMBER
+                </h5>
                 <span
                   class="color-yellow small-text pt-1 bg_primary fw-bold rounded px-2 mt-2 ms-3"
                   >AUTOFILL</span
@@ -289,28 +534,35 @@
                     <label for="gstinFile" class="form-label"
                       >Pan Card Attachment</label
                     >
-                    <div
-                      class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                    >
-                      <!-- File name label -->
-                      <div class="text-muted mb-0" id="fileLabel">
-                        No file chosen
-                      </div>
+                    <div class="d-flex">
+                      <div
+                        class="col-md-12 position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                      >
+                        <!-- File name label -->
+                        <div class="text-muted mb-0" id="fileLabel">
+                          No file chosen
+                        </div>
 
-                      <!-- Upload icon -->
-                      <div>
-                        <img
-                          src="assets/img/upload.svg"
-                          alt="Upload Icon"
-                          class="upload-icon"
+                        <!-- Upload icon -->
+                        <div>
+                          <img
+                            src="assets/img/upload.svg"
+                            alt="Upload Icon"
+                            class="upload-icon"
+                          />
+                        </div>
+
+                        <!-- Transparent file input -->
+                        <input
+                          type="file"
+                          class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                          id="customFile"
                         />
                       </div>
-
-                      <!-- Transparent file input -->
-                      <input
-                        type="file"
-                        class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                        id="customFile"
+                      <img
+                        src="assets/img/circle-tick.svg"
+                        alt="tick"
+                        class="img-fluid ms-3"
                       />
                     </div>
                   </div>
@@ -342,11 +594,11 @@
                 <div
                   class="col-md-1 d-flex align-items-start justify-content-center pt-4"
                 >
-                  <img
+                  <!-- <img
                     src="assets/img/circle-tick.svg"
                     alt="tick"
                     class="img-fluid"
-                  />
+                  /> -->
                 </div>
 
                 <!-- Empty Column for Spacing or Future Content -->
@@ -355,10 +607,12 @@
                     <div class="card-body">
                       <div class="scroll-box">
                         <p class="color-primary">
-                          आयकर विभाग INCOME TAX DEPARTMENT<br />
+                          आयकर विभाग <br />INCOME TAX DEPARTMENT<br />
                           सत्यमेव जयते<br />
-                          A SMART INDIA COMPANY 01/09/2008<br />
-                          Permanent Account Number AAPFA3421J<br />
+                          A SMART INDIA COMPANY<br />
+                          01/09/2008<br />
+                          Permanent Account Number<br />
+                          AAPFA3421J<br />
                           भारत सरकार<br />
                           GOVT. OF INDIA<br />
                           भारत सर<br />
@@ -400,28 +654,35 @@
                           <label for="gstinFile" class="form-label"
                             >To attach document</label
                           >
-                          <div
-                            class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                          >
-                            <!-- File name label -->
-                            <div class="text-muted mb-0" id="fileLabel">
-                              No file chosen
-                            </div>
+                          <div class="d-flex">
+                            <div
+                              class="col-md-12 position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                            >
+                              <!-- File name label -->
+                              <div class="text-muted mb-0" id="fileLabel">
+                                No file chosen
+                              </div>
 
-                            <!-- Upload icon -->
-                            <div>
-                              <img
-                                src="assets/img/upload.svg"
-                                alt="Upload Icon"
-                                class="upload-icon"
+                              <!-- Upload icon -->
+                              <div>
+                                <img
+                                  src="assets/img/upload.svg"
+                                  alt="Upload Icon"
+                                  class="upload-icon"
+                                />
+                              </div>
+
+                              <!-- Transparent file input -->
+                              <input
+                                type="file"
+                                class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                                id="customFile"
                               />
                             </div>
-
-                            <!-- Transparent file input -->
-                            <input
-                              type="file"
-                              class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                              id="customFile"
+                            <img
+                              src="assets/img/circle-tick.svg"
+                              alt="tick"
+                              class="img-fluid ms-3"
                             />
                           </div>
                         </div>
@@ -433,11 +694,11 @@
                   <div
                     class="col-md-1 d-flex align-items-start justify-content-center pt-4"
                   >
-                    <img
+                    <!-- <img
                       src="assets/img/circle-tick.svg"
                       alt="tick"
                       class="img-fluid"
-                    />
+                    /> -->
                   </div>
 
                   <!-- CIN Autofill Result Card -->
@@ -446,14 +707,21 @@
                       <div class="card-body">
                         <div class="scroll-box">
                           <p class="color-primary mb-0">
-                            CIN: U12345MH2025PTC123456<br />
-                            Company Name: ABC Technologies Pvt Ltd<br />
-                            Registration Date: 15-Feb-2025<br />
-                            Company Type: Private Limited Company<br />
-                            State: Maharashtra<br />
-                            Industry Code: 620<br />
-                            Authorized Capital: ₹10,000,000<br />
-                            Paid-up Capital: ₹7,500,000
+                            CIN:<br />
+                            U12345MH2025PTC123456<br />
+                            Company Name:<br />
+                            ABC Technologies Pvt Ltd<br />
+                            Registration Date:<br />
+                            15-Feb-2025<br />
+                            Company Type:<br />
+                            Private Limited Company<br />
+                            State:<br />
+                            Maharashtra<br />
+                            Industry Code:<br />
+                            620<br />
+                            Authorized Capital:<br />
+                            ₹10,000,000<br />
+                            Paid-up Capital: <br />₹7,500,000
                           </p>
                         </div>
                       </div>
@@ -492,28 +760,35 @@
                           <label for="gstinFile" class="form-label"
                             >To attach document</label
                           >
-                          <div
-                            class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                          >
-                            <!-- File name label -->
-                            <div class="text-muted mb-0" id="fileLabel">
-                              No file chosen
-                            </div>
+                          <div class="d-flex">
+                            <div
+                              class="col-md-12 position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                            >
+                              <!-- File name label -->
+                              <div class="text-muted mb-0" id="fileLabel">
+                                No file chosen
+                              </div>
 
-                            <!-- Upload icon -->
-                            <div>
-                              <img
-                                src="assets/img/upload.svg"
-                                alt="Upload Icon"
-                                class="upload-icon"
+                              <!-- Upload icon -->
+                              <div>
+                                <img
+                                  src="assets/img/upload.svg"
+                                  alt="Upload Icon"
+                                  class="upload-icon"
+                                />
+                              </div>
+
+                              <!-- Transparent file input -->
+                              <input
+                                type="file"
+                                class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                                id="customFile"
                               />
                             </div>
-
-                            <!-- Transparent file input -->
-                            <input
-                              type="file"
-                              class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                              id="customFile"
+                            <img
+                              src="assets/img/circle-tick.svg"
+                              alt="tick"
+                              class="img-fluid ms-3"
                             />
                           </div>
                         </div>
@@ -525,11 +800,11 @@
                   <div
                     class="col-md-1 d-flex align-items-start justify-content-center pt-4"
                   >
-                    <img
+                    <!-- <img
                       src="assets/img/circle-tick.svg"
                       alt="tick"
                       class="img-fluid"
-                    />
+                    /> -->
                   </div>
 
                   <!-- CIN Autofill Result Card -->
@@ -538,15 +813,15 @@
                       <div class="card-body">
                         <div class="scroll-box">
                           <p class="color-primary mb-0">
-                            MCA Registration Number:  CIN:
+                            MCA Registration Number:<br />  CIN:
                             U12345DL2023PLC012345<br />
-                            Company Name:  XYZ Innovations Limited<br />
-                            Incorporation Date:  10-Jan-2023<br />
-                            Company Type:  Public Limited Company<br />
-                            Registered State:  Delhi<br />
-                            ROC (Registrar of Companies) Code:  DL<br />
-                            Authorized Capital:  ₹50,000,000<br />
-                            Paid-up Capital:  ₹35,000,000<br />
+                            Company Name:<br />  XYZ Innovations Limited<br />
+                            Incorporation Date:<br />  10-Jan-2023<br />
+                            Company Type:<br />  Public Limited Company<br />
+                            Registered State:<br />  Delhi<br />
+                            ROC (Registrar of Companies) Code:<br />  DL<br />
+                            Authorized Capital:<br />  ₹50,000,000<br />
+                            Paid-up Capital:<br />  ₹35,000,000<br />
                           </p>
                         </div>
                       </div>
@@ -563,7 +838,9 @@
                       <!-- CIN Text and AutoFill -->
                       <div class="col-md-12">
                         <div class="d-flex">
-                          <h5 class="color-primary fw-semibold mt-2 mb-0">FSSAI</h5>
+                          <h5 class="color-primary fw-semibold mt-2 mb-0">
+                            FSSAI
+                          </h5>
                           <span
                             class="color-yellow small-text pt-1 fw-bold bg_primary rounded px-2 mt-2 d-inline-block ms-3"
                             >AUTOFILL</span
@@ -582,28 +859,35 @@
                           <label for="gstinFile" class="form-label"
                             >Certificate</label
                           >
-                          <div
-                            class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                          >
-                            <!-- File name label -->
-                            <div class="text-muted mb-0" id="fileLabel">
-                              No file chosen
-                            </div>
+                          <div class="d-flex">
+                            <div
+                              class="col-md-12 position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                            >
+                              <!-- File name label -->
+                              <div class="text-muted mb-0" id="fileLabel">
+                                No file chosen
+                              </div>
 
-                            <!-- Upload icon -->
-                            <div>
-                              <img
-                                src="assets/img/upload.svg"
-                                alt="Upload Icon"
-                                class="upload-icon"
+                              <!-- Upload icon -->
+                              <div>
+                                <img
+                                  src="assets/img/upload.svg"
+                                  alt="Upload Icon"
+                                  class="upload-icon"
+                                />
+                              </div>
+
+                              <!-- Transparent file input -->
+                              <input
+                                type="file"
+                                class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                                id="customFile"
                               />
                             </div>
-
-                            <!-- Transparent file input -->
-                            <input
-                              type="file"
-                              class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                              id="customFile"
+                            <img
+                              src="assets/img/circle-tick.svg"
+                              alt="tick"
+                              class="img-fluid ms-3"
                             />
                           </div>
                         </div>
@@ -615,11 +899,11 @@
                   <div
                     class="col-md-1 d-flex align-items-start justify-content-center pt-4"
                   >
-                    <img
+                    <!-- <img
                       src="assets/img/circle-tick.svg"
                       alt="tick"
                       class="img-fluid"
-                    />
+                    /> -->
                   </div>
 
                   <!-- CIN Autofill Result Card -->
@@ -628,13 +912,14 @@
                       <div class="card-body">
                         <div class="scroll-box">
                           <p class="color-primary mb-0">
-                            FSSAI License Number:  12345678901234<br />
-                            License Holder Name:  Fresh Bites Foods Pvt Ltd<br />
-                            License Issue Date:  01-Mar-2024<br />
-                            License Expiry Date:  28-Feb-2029<br />
-                            Type of License:  State License<br />
-                            Address Registered:  123, Green Park, New Delhi,
-                            Delhi, 110016<br />
+                            FSSAI License Number:<br />  12345678901234<br />
+                            License Holder Name:<br />  Fresh Bites Foods Pvt
+                            Ltd<br />
+                            License Issue Date:<br />  01-Mar-2024<br />
+                            License Expiry Date:<br />  28-Feb-2029<br />
+                            Type of License:<br />  State License<br />
+                            Address Registered:<br />  123, Green Park, New
+                            Delhi, Delhi, 110016<br />
                             Food Business Category:  Manufacturer and
                             Distributor<br />
                           </p>
@@ -674,28 +959,35 @@
                           <label for="gstinFile" class="form-label"
                             >To attach document</label
                           >
-                          <div
-                            class="position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                          >
-                            <!-- File name label -->
-                            <div class="text-muted mb-0" id="fileLabel">
-                              No file chosen
-                            </div>
+                          <div class="d-flex">
+                            <div
+                              class="col-md-12 position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                            >
+                              <!-- File name label -->
+                              <div class="text-muted mb-0" id="fileLabel">
+                                No file chosen
+                              </div>
 
-                            <!-- Upload icon -->
-                            <div>
-                              <img
-                                src="assets/img/upload.svg"
-                                alt="Upload Icon"
-                                class="upload-icon"
+                              <!-- Upload icon -->
+                              <div>
+                                <img
+                                  src="assets/img/upload.svg"
+                                  alt="Upload Icon"
+                                  class="upload-icon"
+                                />
+                              </div>
+
+                              <!-- Transparent file input -->
+                              <input
+                                type="file"
+                                class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                                id="customFile"
                               />
                             </div>
-
-                            <!-- Transparent file input -->
-                            <input
-                              type="file"
-                              class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                              id="customFile"
+                            <img
+                              src="assets/img/circle-tick.svg"
+                              alt="tick"
+                              class="img-fluid ms-3"
                             />
                           </div>
                         </div>
@@ -707,11 +999,11 @@
                   <div
                     class="col-md-1 d-flex align-items-start justify-content-center pt-4"
                   >
-                    <img
+                    <!-- <img
                       src="assets/img/circle-tick.svg"
                       alt="tick"
                       class="img-fluid"
-                    />
+                    /> -->
                   </div>
 
                   <!-- CIN Autofill Result Card -->
@@ -720,13 +1012,13 @@
                       <div class="card-body">
                         <div class="scroll-box">
                           <p class="color-primary mb-0">
-                            Account Holder Name:  Jane Doe<br />
-                            Bank Name:  State Bank of India<br />
-                            Branch:  MG Road Branch, Mumbai<br />
-                            Account Number:  123456789012<br />
-                            IFSC Code:  SBIN0000456<br />
-                            MICR Code:  400002345<br />
-                            Cheque Number:  000123<br />
+                            Account Holder Name:<br />  Jane Doe<br />
+                            Bank Name:<br />  State Bank of India<br />
+                            Branch:<br />  MG Road Branch, Mumbai<br />
+                            Account Number:<br />  123456789012<br />
+                            IFSC Code:  <br />SBIN0000456<br />
+                            MICR Code:<br />  400002345<br />
+                            Cheque Number:<br />  000123<br />
                           </p>
                         </div>
                       </div>
@@ -739,6 +1031,10 @@
                 <button
                   class="btn bg_secondary color-white"
                   (click)="nextTab()"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse2"
+                  data-step="1"
+                  aria-expanded="true"
                 >
                   Continue
                   <img
@@ -846,6 +1142,10 @@
                       <button
                         class="btn bg_secondary color-white px-4"
                         (click)="nextTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse3"
+                        data-step="1"
+                        aria-expanded="true"
                       >
                         Next
                       </button>
@@ -955,12 +1255,23 @@
                     class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
                   >
                     <div class="d-flex px-2 justify-content-between">
-                      <button class="btn btn-outline px-4" (click)="prevTab()">
+                      <button
+                        class="btn btn-outline px-4"
+                        (click)="prevTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse2"
+                        data-step="1"
+                        aria-expanded="true"
+                      >
                         Previous
                       </button>
                       <button
                         class="btn bg_secondary color-white px-4"
                         (click)="nextTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse4"
+                        data-step="1"
+                        aria-expanded="true"
                       >
                         Next
                       </button>
@@ -1104,12 +1415,23 @@
                     class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
                   >
                     <div class="d-flex px-2 justify-content-between">
-                      <button class="btn btn-outline px-4" (click)="prevTab()">
+                      <button
+                        class="btn btn-outline px-4"
+                        (click)="prevTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse3"
+                        data-step="1"
+                        aria-expanded="true"
+                      >
                         Previous
                       </button>
                       <button
                         class="btn bg_secondary color-white px-4"
                         (click)="nextTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse5"
+                        data-step="1"
+                        aria-expanded="true"
                       >
                         Next
                       </button>
@@ -1230,12 +1552,23 @@
                     class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
                   >
                     <div class="d-flex px-2 justify-content-between">
-                      <button class="btn btn-outline px-4" (click)="prevTab()">
+                      <button
+                        class="btn btn-outline px-4"
+                        (click)="prevTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse4"
+                        data-step="1"
+                        aria-expanded="true"
+                      >
                         Previous
                       </button>
                       <button
                         class="btn bg_secondary color-white px-4"
                         (click)="nextTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse6"
+                        data-step="1"
+                        aria-expanded="true"
                       >
                         Next
                       </button>
@@ -1447,12 +1780,23 @@
                     class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
                   >
                     <div class="d-flex px-2 justify-content-between">
-                      <button class="btn btn-outline px-4" (click)="prevTab()">
+                      <button
+                        class="btn btn-outline px-4"
+                        (click)="prevTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse5"
+                        data-step="1"
+                        aria-expanded="true"
+                      >
                         Previous
                       </button>
                       <button
                         class="btn bg_secondary color-white px-4"
                         (click)="nextTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse7"
+                        data-step="1"
+                        aria-expanded="true"
                       >
                         Next
                       </button>
@@ -1484,85 +1828,92 @@
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label"
-                            >Do you have documented safety orientation &
-                            training Programs for the scope of services
+                            >Do you have documented safety orientation & training  programs for the scope of services?
                           </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
                             <option value="">Select</option>
+                            <option value="">Full compliance (Training evidence shared for entire scope of work (SOW))</option>
+                            <option value="">Non compliance (Training evidences not shared)</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label"
-                            >Do you have the capability of preparing Risk
-                            Assessment & safe system of work (Standard Operating
-                            Procedure) for the SOW
+                            >Do you have the capability of preparing Risk Assessment & Safe System of work (Standard Operating Procedure) for the SOW?
                           </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
                             <option value="">Select</option>
+                            <option value="">Full compliance (Risk Assessment & SOP developed for entire SOW)</option>
+                            <option value="">Partial compliance (RA& SOP available for all high risk activities of SOW)</option>
+                            <option value="">Non compliance</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label"
-                            >Do you have documented safety orientation &
-                            training Programs for the scope of services
+                            >Do you comply with all the HSE related legal requirements for your area of work?
                           </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
                             <option value="">Select</option>
+                            <option value="">Full compliance (Availability of applicable licenses)</option>
+                            <option value="">Non compliance</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label"
-                            >Do you have documented safety orientation &
-                            training Programs for the scope of services
+                            >Do you have documented safety orientation & training  programs for the scope of services 
                           </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
                             <option value="">Select</option>
+                            <option value="">Full compliance (Training material & evidence shared for entire scope of work (SOW))</option>
+                            <option value="">Non compliance (Training evidences not shared)</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label"
-                            >Do you have documented safety orientation &
-                            training Programs for the scope of services
+                            >Do you have a process of carrying out Medical Fitness Test for all employees involved in High Risk Activities?
                           </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
                             <option value="">Select</option>
+                            <option value="">Full compliance (Completed for all staff)</option>
+                            <option value="">Non compliance</option>
                           </select>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group mb-3">
                           <label class="form-label"
-                            >Do you have documented safety orientation &
-                            training Programs for the scope of services
+                            >Do you have the capability of preparing Risk Assessment & Safe System of work (Standard Operating Procedure) for the SOW
                           </label>
                           <select
                             class="form-control form-select"
                             placceholder="Select"
                           >
                             <option value="">Select</option>
+                            <option value="">Full compliance (Risk Assessment & SOP developed for entire SOW)</option>
+                            <option value="">Partial compliance (RA& SOP available for all high risk activities of SOW)</option>
+                            <option value="">Non compliance</option>
                           </select>
                         </div>
                       </div>
@@ -1572,12 +1923,23 @@
                     class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
                   >
                     <div class="d-flex px-2 justify-content-between">
-                      <button class="btn btn-outline px-4" (click)="prevTab()">
+                      <button
+                        class="btn btn-outline px-4"
+                        (click)="prevTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse6"
+                        data-step="1"
+                        aria-expanded="true"
+                      >
                         Previous
                       </button>
                       <button
                         class="btn bg_secondary color-white px-4"
                         (click)="nextTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse8"
+                        data-step="1"
+                        aria-expanded="true"
                       >
                         Next
                       </button>
@@ -1717,12 +2079,23 @@
                     class="footer border-radius-bottom p-2 border-top bg-lighter-blue"
                   >
                     <div class="d-flex px-2 justify-content-between">
-                      <button class="btn btn-outline px-4" (click)="prevTab()">
+                      <button
+                        class="btn btn-outline px-4"
+                        (click)="prevTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse7"
+                        data-step="1"
+                        aria-expanded="true"
+                      >
                         Previous
                       </button>
                       <button
                         class="btn bg_secondary color-white px-4"
                         (click)="nextTab()"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse9"
+                        data-step="1"
+                        aria-expanded="true"
                       >
                         Next
                       </button>
@@ -1848,12 +2221,16 @@
                         <button
                           class="btn btn-outline px-4"
                           (click)="prevTab()"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse8"
+                          data-step="1"
+                          aria-expanded="true"
                         >
                           Previous
                         </button>
                       </div>
                       <div>
-                        <button class="btn btn-outline me-3 px-4">
+                        <button class="btn btn-outline me-3 px-4 " data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Add More Document
                         </button>
                         <button class="btn bg_secondary color-white px-4">
@@ -1872,3 +2249,121 @@
   </div>
 </div>
 <!-- Modal for Confirmation -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"> 
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title color-primary fs-5" id="exampleModalLabel">Add Document</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group mb-3">
+                          <label class="form-label"
+                            >Question
+                          </label>
+                          <select
+                            class="form-control form-select"
+                            placceholder="Select"
+                          >
+                            <option value="">Select</option>
+                            <option value="">PAN</option>
+                            <option value="">GST</option>
+                            <option value="">Cancelled Cheque</option>
+                            <option value="">FSSAI License No.</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-3">
+                          <label class="form-label"
+                            >Answer
+                          </label>
+                          <select
+                            class="form-control form-select"
+                            placceholder="Select"
+                          >
+                            <option value="">Select One</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-3">
+                          <label class="form-label"
+                            >Document Type
+                          </label>
+                           <select
+                            class="form-control form-select"
+                            placceholder="Select"
+                          >
+                            <option value="">Select</option>
+                            <option value="">PAN</option>
+                            <option value="">GST</option>
+                            <option value="">Cancelled Cheque</option>
+                            <option value="">FSSAI License No.</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-3">
+                          <label class="form-label"
+                            >Upload Document
+                          </label>
+                           <div
+                        class="col-md-12 position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
+                      >
+                        <!-- File name label -->
+                        <div class="text-muted mb-0" id="fileLabel">
+                          No file chosen
+                        </div>
+
+                        <!-- Upload icon -->
+                        <div>
+                          <img
+                            src="assets/img/upload.svg"
+                            alt="Upload Icon"
+                            class="upload-icon"
+                          />
+                        </div>
+
+                        <!-- Transparent file input -->
+                        <input
+                          type="file"
+                          class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+                          id="customFile"
+                        />
+                      </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-3">
+                          <label class="form-label"
+                            >Authority
+                          </label>
+                          <select
+                            class="form-control form-select"
+                            placceholder="Select"
+                          >
+                            <option value="">Select Document1</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-3">
+                          <label class="form-label"
+                            >Validity till Date
+                          </label>
+                         <input type="date" class="form-control" value="2018-03-01">
+                        </div>
+                      </div>
+                    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save </button>
+      </div>
+    </div>
+  </div>
+</div>

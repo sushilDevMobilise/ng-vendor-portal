@@ -142,3 +142,63 @@
 //     font-size: 13px;
 //     color: #6c757d;
 //   }
+
+  // .step-item p {
+  //   display: none;
+  // }
+
+  // .step-item.active p {
+  //   display: block;
+  // }
+
+  // .step-item {
+  //   cursor: pointer;
+  // }
+   .step-accordion .accordion-item {
+    border: none;
+   background-color: var(--lighter-blue)      ;
+    position: relative;
+    margin-left: 15px;
+  }
+
+  .step-accordion .accordion-button {
+    background: transparent;
+    padding-left: 2rem;
+    font-weight: 500;
+    color: #2A295C;
+    box-shadow: none;
+  }
+
+  .step-accordion .accordion-button::after{
+    display: none;
+  } 
+
+  .step-accordion .accordion-button::before {
+    content: attr(data-step);
+    position: absolute;
+    left: -14px;
+    top: 12px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #283897;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #283897;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .step-accordion .accordion-button:not(.collapsed) {
+    font-weight: 600;
+    color: var(--primary);
+    background-color: transparent;
+  }
+
+  .accordion-body {
+    color: var(--primary);
+    font-size: 14px;
+    padding-left: 2rem;
+    padding-top: 0.25rem;
+  }

@@ -35,4 +35,13 @@ resetStepper() {
     console.log('Form submitted!');
     this.router.navigate(['/all-courses'])
   }
+  activateStep(event: Event): void {
+  const targetElement = event.currentTarget as HTMLElement;
+
+  const stepItems = document.querySelectorAll('.step-item');
+  stepItems.forEach(item => item.classList.remove('active'));
+
+  targetElement.classList.add('active');
+}
+
 }
