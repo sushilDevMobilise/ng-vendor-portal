@@ -1,360 +1,23 @@
 <div class="container-fluid">
   <div class="row min-vh-100">
-    <!-- Sidebar -->
     <div class="col-md-3 left-fix bg-lighter-blue border-end p-3">
-      <div>
+      <div class="mt-2">
         <img src="assets/img/Arrow 1.svg" class="me-3" alt="arrow" />
-        <span class="color-primary">Go to Back</span>
-        <div class="d-flex justify-content-between mt-2 py-3">
-          <ul class="nav nav-pills d-flex justify-content-between gap-2 custom-step-pills" role="tablist">
-            <li class="nav-item flex-fill text-center" role="presentation">
-              <a
-                href="#basictab1"
-                data-bs-toggle="tab"
-                class="nav-link"
-                [class.active]="tabIndex === 0"
-                role="tab"
-              ></a>
-            </li>
-            <li class="nav-item flex-fill text-center" role="presentation">
-              <a
-                href="#basictab2"
-                data-bs-toggle="tab"
-                class="nav-link"
-                [class.active]="tabIndex === 1"
-                role="tab"
-              ></a>
-            </li>
-            <li class="nav-item flex-fill text-center" role="presentation">
-              <a
-                href="#basictab3"
-                data-bs-toggle="tab"
-                class="nav-link"
-                [class.active]="tabIndex === 2"
-                role="tab"
-              ></a>
-            </li>
-          </ul>
-        </div>
+        <span class="color-primary fw-semibold">Go to Back</span>
       </div>
-      <div class="d-flex flex-column mt-2">
-        <h5 class="color-primary">Enter Vendor Details</h5>
+      <div class="d-flex flex-column mt-4">
+        <h5 class="color-primary">Vendor Invitation Request</h5>
         <p class="color-primary">
-          Upload or manually enter the vendor’s GST and PAN numbers to begin the onboarding process.
+          Please complete this form to invite a new external vendor. Once submitted, the vendor will receive an email with a link to provide their company details and complete the registration process.
         </p>
       </div>
-      <!-- <div class="d-flex flex-column gap-3">
-        <h5 class="color-primary">Course Details</h5>
-        <p class="color-primary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
-          erat id ligula facilisis tincidunt.
-        </p>
-      </div>
-      <div class="d-flex flex-column gap-3 mt-4">
-        <h5 class="color-primary">Course Details</h5>
-        <p class="color-primary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
-          erat id ligula facilisis tincidunt.
-        </p>
-      </div> -->
       <div class="position-absolute bottom-0 px-3 py-5">
         <img src="assets/img/OBJECTS (1).svg" alt="" />
       </div>
     </div>
 
-    <!-- Main Content -->
     <div class="col-md-9 px-4 bg-white">
-      <div class="tab-content">
-        <!-- Tab 1 -->
-        <div
-          class="tab-pane mt-4"
-          [class.active]="tabIndex === 0"
-          id="basictab1"
-        >
-          <div class="row">
-            <div class="col-md-12">
-              <div>
-                <h2 class="color-primary">Invite External Vendor</h2>
-                <div class="d-flex">
-                  <h5 class="color-primary mt-2 fw-semibold mb-0">Share Business GSTIN</h5>
-                  <span
-                    class="color-yellow bg_primary fw-bold small-text pt-1 rounded px-2 mt-2 ms-3"
-                    >AUTOFILL</span
-                  >
-                </div>
-                <p class="color-primary mt-2 opacity-text">
-                  We will use GSTIN number to autofill the Vendor Invite form,
-                  you don’t <br> need to fill the the entire form.
-                </p>
-              </div>
-              <div class="row g-3">
-                <!-- GSTIN Attachment & Number Section -->
-                <div class="col-md-5">
-                  <!-- GSTIN Attachment -->
-                  <div class="form-group">
-                    <label for="gstinFile" class="form-label"
-                      >GSTIN Attachment</label
-                    >
-                    <!-- <input type="file" class="form-control" id="gstinFile" /> -->
-                    <div class="d-flex">
-                      <div
-                        class="col-md-12 position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                      >
-                        <!-- File name label -->
-                        <div class="text-muted mb-0" id="fileLabel">
-                          No file chosen
-                        </div>
-
-                        <!-- Upload icon -->
-                        <div>
-                          <img
-                            src="assets/img/upload.svg"
-                            alt="Upload Icon"
-                            class="upload-icon"
-                          />
-                        </div>
-
-                        <!-- Transparent file input -->
-                        <input
-                          type="file"
-                          class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                          id="customFile"
-                        />
-                      </div>
-                      <img
-                        src="assets/img/circle-tick.svg"
-                        alt="tick"
-                        class="img-fluid ms-3"
-                      />
-                    </div>
-                  </div>
-
-                  <!-- OR Divider -->
-                  <div
-                    class="d-flex align-items-center justify-content-center mt-3 gap-2 w-100"
-                  >
-                    <div class="flex-grow-1 border-bottom"></div>
-                    <span class="text-secondary small">Or</span>
-                    <div class="flex-grow-1 border-bottom"></div>
-                  </div>
-
-                  <!-- GSTIN Number Input -->
-                  <div class="form-group">
-                    <label for="gstinNumber" class="form-label"
-                      >GSTIN Number</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="gstinNumber"
-                      placeholder="Enter your 15-digit GSTIN"
-                    />
-                  </div>
-                </div>
-
-                <!-- Tick Icon -->
-                <div
-                  class="col-md-1 d-flex align-items-start justify-content-center pt-4"
-                >
-                  <!-- <img
-                    src="assets/img/circle-tick.svg"
-                    alt="tick"
-                    class="img-fluid"
-                  /> -->
-                </div>
-
-                <!-- Empty Column for Spacing or Future Content -->
-                <div class="col-md-6">
-                  <div class="card mt-2">
-                    <div class="card-body">
-                      <div class="scroll-box">
-                        <p class="color-primary me-3">
-                          सत्यमेव जयते <br />
-                          Government of India <br />
-                          Form GST REG-06<br />
-                          [See Rule 10(1)]<br />
-                          Registration Certificate <br />
-                          Registration Number: 09AAATC2716R8Z6<br />
-                          1.<br />
-                          Legal Name<br />
-                          2.<br />
-                          Trade Name, if any<br />
-                          3.<br />
-                          4.<br />
-                          Constitution of Business <br />Address of Principal
-                          Place of Business<br />
-                          COUNCIL OF SCIENTIFIC AND INDUSTRIAL RESEARCH<br />
-                          CENTRAL DRUG RESEARCH INSTITUTE<br />
-                          Society/Club/ Trust/ AOP<br />
-                          1, CDRI, SITAPUR ROAD, JANKIPURAM, Lucknow, Uttar
-                          Pradesh,<br />
-                          226021 <br />5. <br />Date of Liability
-                          <br />28/03/2008<br />
-                          6.<br />
-                          Period of Validity<br />
-                          From 14/08/2017 <br />To NA <br />7.<br />
-                          Type of Registration<br />
-                          Regular<br />
-                          8.<br />
-                          Signature<br />
-                          Particulars of Approving Authority Centre<br />
-                          Signature Not Verified<br />
-                          Digitally signed by DS GOODS<br />
-                          AND SERVICES AX NETWORK 1 Date: 2018.03.01-22:12:16
-                          IST<br />
-                          Name <br />Designation<br />
-                          Jurisdictional Office<br />
-                          9.<br />
-                          Date of issue of Certificate<br />
-                          Pankaj Kumar Srivastava<br />
-                          Superintendent<br />
-                          Lucknow Sector-18, AC <br />01/03/2018<br />
-                          Note: The registration certificate is required to be
-                          prominently displayed at all places of business in the
-                          State. This is a system generated digitally signed
-                          Registration Certificate issued based on the approval
-                          of application granted on 14/08/2017 by the
-                          jurisdictional authority.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-flex mt-5">
-                <h5 class="color-primary fw-semibold mt-2 mb-0">
-                  Share Business PAN NUMBER
-                </h5>
-                <span
-                  class="color-yellow bg_primary fw-bold small-text pt-1 rounded px-2 mt-2 ms-3"
-                  >AUTOFILL</span
-                >
-              </div>
-              <p class="color-primary mt-2 opacity-text">
-                We will use PAN number to autofill the Vendor Invite form, you
-                don’t <br> need to fill the the entire form.
-              </p>
-              <div class="row g-3">
-                <!-- GSTIN Attachment & Number Section -->
-                <div class="col-md-5">
-                  <!-- GSTIN Attachment -->
-                  <div class="form-group">
-                    <label for="gstinFile" class="form-label"
-                      >Pan Card Attachment</label
-                    >
-                    <div class="d-flex">
-                      <div
-                        class="col-md-12 position-relative d-flex align-items-center justify-content-between px-3 py-2 rounded custom-upload-box"
-                      >
-                        <!-- File name label -->
-                        <div class="text-muted mb-0" id="fileLabel">
-                          No file chosen
-                        </div>
-
-                        <!-- Upload icon -->
-                        <div>
-                          <img
-                            src="assets/img/upload.svg"
-                            alt="Upload Icon"
-                            class="upload-icon"
-                          />
-                        </div>
-
-                        <!-- Transparent file input -->
-                        <input
-                          type="file"
-                          class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
-                          id="customFile"
-                        />
-                      </div>
-                      <img
-                        src="assets/img/circle-tick.svg"
-                        alt="tick"
-                        class="img-fluid ms-3"
-                      />
-                    </div>
-                  </div>
-
-                  <!-- OR Divider -->
-                  <div
-                    class="d-flex align-items-center justify-content-center mt-3 gap-2 w-100"
-                  >
-                    <div class="flex-grow-1 border-bottom"></div>
-                    <span class="text-secondary small">Or</span>
-                    <div class="flex-grow-1 border-bottom"></div>
-                  </div>
-
-                  <!-- GSTIN Number Input -->
-                  <div class="form-group">
-                    <label for="gstinNumber" class="form-label"
-                      >Pan Card Number</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="gstinNumber"
-                      placeholder="Enter your 15-digit GSTIN"
-                    />
-                  </div>
-                </div>
-
-                <!-- Tick Icon -->
-                <div
-                  class="col-md-1 d-flex align-items-start justify-content-center pt-4"
-                >
-                  <!-- <img
-                    src="assets/img/circle-tick.svg"
-                    alt="tick"
-                    class="img-fluid"
-                  /> -->
-                </div>
-
-                <!-- Empty Column for Spacing or Future Content -->
-                <div class="col-md-6">
-                  <div class="card mt-2">
-                    <div class="card-body">
-                      <div class="scroll-box">
-                        <p class="color-primary me-3">
-                           आयकर विभाग <br />INCOME TAX DEPARTMENT<br />
-                          सत्यमेव जयते<br />
-                          A SMART INDIA COMPANY<br />
-                          01/09/2008<br />
-                          Permanent Account Number<br />
-                          AAPFA3421J<br />
-                          भारत सरकार<br />
-                          GOVT. OF INDIA<br />
-                          भारत सर<br />
-                          24092008
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-start mt-4">
-                <button
-                  class="btn bg_secondary color-white"
-                  (click)="nextTab()"
-                >
-                  Continue
-                  <img
-                    src="assets/img/arrow right.svg"
-                    class="ms-2"
-                    alt="arrow"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab 2 -->
-        <div
-          class="tab-pane mt-4"
-          [class.active]="tabIndex === 1"
-          id="basictab2"
-        >
+        <div class=" mt-4">
           <div class="row">
             <div class="col-lg-12">
               <h2 class="color-primary">Invite External Vendor</h2>
@@ -371,23 +34,12 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group mb-3">
-                          <label class="form-label">Purchaser</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Mobilise app lab"
-                            disabled
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group mb-3">
                           <label class="form-label">Organization Name</label>
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Mobilise app lab"
-                            disabled
+                            placeholder="Organization name"
+                           
                           />
                         </div>
                       </div>
@@ -397,8 +49,8 @@
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Ashish Sharma"
-                            disabled
+                            placeholder="Contact name"
+                           
                           />
                         </div>
                       </div>
@@ -408,8 +60,8 @@
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="ashish.sharma@mobilise.co.in"
-                            disabled
+                            placeholder="Email id"
+                           
                           />
                         </div>
                       </div>
@@ -419,8 +71,8 @@
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="9999991245"
-                            disabled
+                            placeholder="Contact number"
+
                           />
                         </div>
                       </div>
@@ -459,42 +111,6 @@
                             <option selected>FMP</option>
                             <option selected>Admin</option>
                           </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group mb-3">
-                          <label class="form-label">GST Number</label>
-                          <img
-                            src="assets/img/eye.svg"
-                            alt="eye"
-                            class="eye-icon"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModaal"
-                          />
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="22AAAAA0000A1Z5"
-                            disabled
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group mb-3">
-                          <label class="form-label">Pan Number</label>
-                          <img
-                            src="assets/img/eye.svg"
-                            alt="eye"
-                            class="eye-icon"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModall"
-                          />
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="kscam1221s"
-                            disabled
-                          />
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -560,24 +176,7 @@
                       >
                         <input type="checkbox" class="mt-1" />
                         <p class="color-primary mb-0">
-                          Supplier Code of Conduct:
-                        </p>
-                      </div>
-                      <div
-                        class="d-inline-flex mb-2 align-items-start gap-3 w-100"
-                      >
-                        <input type="checkbox" class="mt-1" />
-                        <p class="color-primary mb-0">
-                          Animal Welfare Supplier Charter Supplier
-                          Acknowledgement Form:
-                        </p>
-                      </div>
-                      <div
-                        class="d-inline-flex mb-2 align-items-start gap-3 w-100"
-                      >
-                        <input type="checkbox" class="mt-1" />
-                        <p class="color-primary mb-0">
-                          Sustainable Seafood Charter Supplier Acknowledgement:
+                          Is this vendor an HRTP Vendor?
                         </p>
                       </div>
                     </div>
@@ -600,20 +199,9 @@
             </div>
           </div>
         </div>
-
-        <!-- Tab 3 -->
-        <div class="tab-pane" [class.active]="tabIndex === 2" id="basictab3">
-          <!-- Your Curriculum/Accordion code here -->
-        </div>
-
-        <!-- Tab 4 -->
-        <div class="tab-pane" [class.active]="tabIndex === 3" id="basictab4">
-          <!-- Additional Info and Submit -->
-        </div>
       </div>
     </div>
   </div>
-</div>
 <!-- Modal for Confirmation -->
 <div
   class="modal fade"
@@ -658,51 +246,6 @@
         <button type="button" class="btn btn-primary">
           Yes, Send another Invite
         </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div
-  class="modal fade"
-  id="exampleModall"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-md">
-    <div class="modal-content">
-      <div class="modal-header bg-green">
-        <h5 class="modal-title" id="exampleModalLabel">Pan Card</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <div class="text-center py-3">
-          <img src="assets/img/fakepan.png" alt="pan" class="img-fluid" />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div
-  class="modal fade"
-  id="exampleModaal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-md">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="text-center py-3">
-          <img src="assets/img/large 1.png" alt="gst" class="img-fluid" />
-        </div>
       </div>
     </div>
   </div>

@@ -1028,6 +1028,10 @@ p {
 // Sidebar End
 
 //Prakash Vendor Registration Css Start
+.form-control::placeholder {
+  color: #2a295c;
+  opacity: 0.4;
+}
 .scroll-box {
   max-height: 150px;
   overflow-y: auto;
