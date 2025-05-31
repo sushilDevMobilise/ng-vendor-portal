@@ -1,0 +1,30 @@
+<div class="page-wrapper invoice-master">
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-lg-6 col-12 mb-2">
+                <h1 class="color-primary">Invoice Management</h1>
+            </div>
+            <div class="col-lg-6 col-12 mb-2">
+                
+            </div>
+        </div>
+        <!-- Cards -->
+         <div class="d-flex justify-content-between flex-wrap g-3">
+            <div class="w-20" *ngFor="let card of cards">
+            <div class="status-card purple shadow-sm border rounded-3 p-3 text-center h-100">
+                <div class="icon-wrapper mb-2" [ngClass]="card.color">
+                <!-- <i [class]="card.icon"></i> -->
+                <img src="assets/img/invoice.svg">
+                </div>
+                <div class="status-label">{{ card.label }}</div>
+                <div class="status-info mt-1">
+                <span class="amount">₹ {{ card.amount }}</span>
+                <span class="divider">|</span>
+                <span class="count">{{ card.count }}</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Cards -->
+    </div>
+</div>

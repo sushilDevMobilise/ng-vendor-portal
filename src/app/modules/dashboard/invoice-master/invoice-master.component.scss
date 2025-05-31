@@ -1,0 +1,64 @@
+.status-card {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+
+    &.bg-success { background-color: #28a745; }
+    &.bg-purple { background-color: #6f42c1; }
+    &.bg-danger { background-color: #dc3545; }
+    &.bg-warning { background-color: #ffc107; }
+    &.bg-info { background-color: #0d6efd; }
+  }
+
+  .status-label {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+  }
+
+  .status-info {
+    font-size: 18px;
+    color: #1a1a40;
+    font-weight: 600;
+
+    .divider {
+      padding: 0 8px;
+      color: #6c757d;
+    }
+  }
+}
+
+
+.status-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    clip-path: polygon(1% 0, 23% 77%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    border-right: 40px solid transparent;
+    border-bottom-left-radius: 10px;
+
+   
+}
+ .purple::before {
+    border-bottom: 40px solid #8e44ad;
+}
