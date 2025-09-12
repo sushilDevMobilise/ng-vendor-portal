@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -9,5 +8,13 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'gn-vendor-portal';
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        console.log('👉 Current route:', event.urlAfterRedirects);
+      }
+    });
+  }
 }

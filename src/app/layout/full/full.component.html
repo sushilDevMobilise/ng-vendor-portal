@@ -1,18 +1,25 @@
-<div class="page-wapper">
-    <div class="page-content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-2 p-0 sidebar1">
-                    <app-sidebar></app-sidebar>
-                </div>
-                <div class="col-lg-10 p-0">
-                    <app-header></app-header>
-                    <div class="page-wrapper">
-                        <router-outlet></router-outlet>
-                    </div>
-                    <app-footer></app-footer>
+
+
+<div class="boxed_wrapper">
+     <!-- mouse-pointer -->
+        <div class="mouse-pointer" id="mouse-pointer">
+            <div class="icon"><i class="icon-06"></i><i class="icon-05"></i></div>
+        </div>
+        <!-- mouse-pointer end -->
+
+        <!-- preloader -->
+        <!-- <div class="loader-wrap">
+            <div class="hendel__preloder">
+                <div class="preloader">
+                    <div class="preloader-ring">datamatrix datamatrix datamatrix</div>    
+                    <div class="preloader-ring">datamatrix datamatrix datamatrix</div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+        <!-- preloader end -->
+
+        <app-header></app-header>
+        <app-banner-sec></app-banner-sec>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
 </div>

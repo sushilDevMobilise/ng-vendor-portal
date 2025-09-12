@@ -1,20 +1,22 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common'; // ✅ Add CommonModule
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import {
-  Chart,
-  DoughnutController,
-  ArcElement,
-  Tooltip,
-  Legend,
-  Title,
+    ArcElement,
+    Chart,
+    DoughnutController,
+    Legend,
+    Title,
+    Tooltip,
 } from 'chart.js';
+import { AboutSectionComponent } from "./about-section/about-section.component";
+import { ServiceSectionComponent } from "./service-section/service-section.component";
 
 Chart.register(DoughnutController, ArcElement, Tooltip, Legend, Title);
 
 @Component({
   selector: 'app-main-dashboard',
   standalone: true,
-  imports: [CommonModule], // ✅ Important for ngFor, ngIf, etc.
+  imports: [CommonModule, AboutSectionComponent, ServiceSectionComponent], // ✅ Important for ngFor, ngIf, etc.
   templateUrl: './main-dashboard.component.html',
   styleUrl: './main-dashboard.component.scss',
 })

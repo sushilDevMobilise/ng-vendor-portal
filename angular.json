@@ -17,37 +17,51 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/gn-vendor-portal",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
-            ],
-            "scripts": [
-              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-              ],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
+          "outputPath": "dist/gn-vendor-portal",
+          "index": "src/index.html",
+          "main": "src/main.ts",
+          "polyfills": [
+            "zone.js"
+          ],
+          "tsConfig": "tsconfig.app.json",
+          "inlineStyleLanguage": "scss",
+          "assets": [
+            "src/favicon.ico",
+            "src/assets",
+            {
+              "glob": "**/*",
+              "input": "public",
+              "output": "/public/"
             }
-          },
+          ],
+          "styles": [
+            "src/assets/css/owl.css",
+            "src/assets/css/bootstrap.css",
+            "src/assets/css/jquery.fancybox.min.css",
+            "src/assets/css/animate.css",
+            "src/assets/css/color.css",
+            "src/assets/css/style.css",
+            "src/assets/css/global.css",
+            "src/assets/css/swiper.min.css",
+            "src/assets/css/responsive.css"
+          ],
+          "scripts": [
+            "src/assets/js/jquery.js",
+            "src/assets/js/bootstrap.min.js",
+            "src/assets/js/owl.js",
+            "src/assets/js/wow.js",
+            "src/assets/js/jquery.fancybox.js",
+            "src/assets/js/appear.js",
+            "src/assets/js/scrollbar.js",
+            "src/assets/js/swiper.min.js",
+            "src/assets/js/script.js"
+          ],
+          "server": "src/main.server.ts",
+          "prerender": true,
+          "ssr": {
+            "entry": "server.ts"
+          }
+        },
           "configurations": {
             "production": {
               "budgets": [
